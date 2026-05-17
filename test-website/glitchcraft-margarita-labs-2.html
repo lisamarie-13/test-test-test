@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLITCHCRAFT MARGARITA LABS</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --terracotta: #C4553A;
+    --terracotta-light: #D4715A;
+    --sage: #5B7B5E;
+    --sage-light: #7A9A7D;
+    --sage-pale: #E8F0E9;
+    --gold: #C69C3F;
+    --gold-light: #E0BD6A;
+    --cream: #FBF7F0;
+    --cream-warm: #F5EDE0;
+    --cream-dark: #EDE4D4;
+    --sand: #D9CCBA;
+    --charcoal: #2C2824;
+    --charcoal-mid: #4A433D;
+    --charcoal-light: #6B635B;
+    --text: #2C2824;
+    --text-mid: #6B635B;
+    --text-light: #8F877F;
+    --text-bright: #1A1714;
+    --border: rgba(44,40,36,0.1);
+    --border-warm: rgba(196,85,58,0.15);
+    --sage-glow: rgba(91,123,94,0.08);
+  }
+
+  @keyframes gentle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+
+  /* ── NAV ── */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(251,247,240,0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; height: 68px;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer; text-decoration: none;
+  }
+  .nav-logo-icon {
+    width: 38px; height: 38px;
+    border: 2px solid var(--terracotta);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--terracotta);
+  }
+  .nav-logo-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 17px;
+    color: var(--text-bright);
+  }
+  .nav-logo-text span { color: var(--terracotta); }
+  .nav-links { display: flex; gap: 4px; }
+  .nav-link {
+    padding: 8px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 700;
+    color: var(--text-mid);
+    background: none; border: none;
+    cursor: pointer; transition: all 0.2s;
+    position: relative; border-radius: 6px;
+  }
+  .nav-link:hover { color: var(--terracotta); background: rgba(196,85,58,0.06); }
+  .nav-link.active { color: var(--terracotta); }
+  .nav-link.active::after {
+    content: ''; position: absolute;
+    bottom: 2px; left: 16px; right: 16px;
+    height: 2px; background: var(--terracotta);
+    border-radius: 1px;
+  }
+  .nav-cta {
+    padding: 10px 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 700;
+    background: var(--terracotta);
+    color: white;
+    border: none; cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--terracotta-light); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(196,85,58,0.25); }
+  .mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
+
+  /* ── PAGES ── */
+  .page { display: none; padding-top: 68px; }
+  .page.active { display: block; }
+
+  /* ── HOME HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    background: linear-gradient(165deg, var(--cream) 0%, var(--cream-warm) 50%, var(--sage-pale) 100%);
+  }
+  .hero-blob-1 {
+    position: absolute;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(196,85,58,0.08), transparent 60%);
+    top: -100px; right: -50px; filter: blur(60px);
+  }
+  .hero-blob-2 {
+    position: absolute;
+    width: 400px; height: 400px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(91,123,94,0.08), transparent 60%);
+    bottom: -150px; left: -80px; filter: blur(60px);
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto;
+    padding: 80px 32px;
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 64px; align-items: center;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px;
+    border: 1.5px solid var(--sage);
+    border-radius: 20px;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 24px;
+  }
+  .hero-tag::before {
+    content: '●'; font-size: 6px; color: var(--terracotta);
+  }
+  .hero h1 {
+    font-size: clamp(48px, 7vw, 84px);
+    line-height: 0.95;
+    color: var(--text-bright);
+    margin-bottom: 8px;
+  }
+  .hero h1 .terra { color: var(--terracotta); }
+  .hero h1 .sage { color: var(--sage); }
+  .hero-sub {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; font-style: italic;
+    font-size: 20px;
+    color: var(--terracotta);
+    margin-bottom: 24px;
+    opacity: 0.85;
+  }
+  .hero-desc {
+    font-size: 15px; color: var(--text-mid);
+    line-height: 1.8; max-width: 480px;
+  }
+  .hero-actions { display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
+  .btn {
+    padding: 14px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 700;
+    border: none; cursor: pointer;
+    transition: all 0.25s;
+    border-radius: 8px;
+  }
+  .btn.terra { background: var(--terracotta); color: white; }
+  .btn.terra:hover { background: var(--terracotta-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(196,85,58,0.25); }
+  .btn.sage { background: var(--sage); color: white; }
+  .btn.sage:hover { background: var(--sage-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(91,123,94,0.25); }
+  .btn.outline {
+    background: transparent;
+    border: 1.5px solid var(--sage);
+    color: var(--sage);
+  }
+  .btn.outline:hover { background: var(--sage-glow); }
+
+  .hero-drink {
+    position: relative;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
+  .drink-frame {
+    width: 300px; height: 400px;
+    border: 2px solid var(--sand);
+    border-radius: 16px;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    background: white;
+    box-shadow: 0 20px 60px rgba(44,40,36,0.08);
+    animation: gentle-float 6s ease-in-out infinite;
+  }
+  .drink-frame::after {
+    content: 'FEATURED';
+    position: absolute; top: -10px; left: 24px;
+    background: var(--cream);
+    padding: 2px 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--terracotta);
+    text-transform: uppercase;
+  }
+  .drink-art { font-size: 120px; }
+  .drink-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px; font-weight: 900;
+    color: var(--text-bright);
+    margin-top: 20px;
+  }
+  .drink-desc {
+    font-size: 12px; color: var(--text-light);
+    text-align: center; margin-top: 6px;
+  }
+
+  /* ── MARQUEE ── */
+  .marquee {
+    overflow: hidden; white-space: nowrap;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    background: white;
+  }
+  .marquee-track {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+  }
+  .marquee-item {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-weight: 700; font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0 32px;
+  }
+  .marquee-item.terra { color: var(--terracotta); }
+  .marquee-item.sage { color: var(--sage); }
+  .marquee-item.gold { color: var(--gold); }
+  .marquee-sep { color: var(--sand); padding: 0 8px; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 96px 32px; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-header { margin-bottom: 56px; }
+  .section-header.center { text-align: center; }
+  .tag-label {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+  }
+  .tag-label.center { text-align: center; }
+  .section-header h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--text-bright);
+    line-height: 1.05;
+    margin-bottom: 14px;
+  }
+  .section-header h2 .terra { color: var(--terracotta); }
+  .section-header h2 .sage { color: var(--sage); }
+  .section-header p { font-size: 15px; color: var(--text-mid); max-width: 500px; line-height: 1.7; }
+  .section-header.center p { margin: 0 auto; }
+
+  /* ── MENU CARDS ── */
+  .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .menu-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .menu-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(44,40,36,0.08); border-color: var(--sand); }
+  .menu-card-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .menu-emoji { font-size: 32px; }
+  .menu-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 20px;
+    color: var(--sage);
+  }
+  .menu-card:nth-child(even) .menu-price { color: var(--terracotta); }
+  .menu-card h3 {
+    font-size: 19px; color: var(--text-bright);
+    margin-bottom: 6px;
+  }
+  .menu-card p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+  .menu-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    border: 1.5px solid var(--terracotta);
+    color: var(--terracotta);
+    border-radius: 4px;
+    margin-top: 12px;
+  }
+
+  /* ── ABOUT ── */
+  .about-hero-sec {
+    padding: 120px 32px 80px;
+    position: relative;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+    overflow: hidden;
+  }
+  .about-hero-sec::before {
+    content: 'GLITCHCRAFT';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: clamp(80px, 15vw, 180px);
+    color: rgba(196,85,58,0.04);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .about-inner {
+    max-width: 1200px; margin: 0 auto;
+    position: relative; z-index: 2;
+  }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .about-cell {
+    background: white;
+    padding: 44px 36px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .about-cell .num {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 52px;
+    color: var(--sage);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .about-cell:nth-child(even) .num { color: var(--terracotta); }
+  .about-cell h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700; font-size: 15px;
+    color: var(--text-bright);
+    margin-bottom: 8px;
+  }
+  .about-cell p { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+
+  .manifesto {
+    border: 1.5px solid var(--sand);
+    padding: 52px 44px;
+    margin-top: 56px;
+    border-radius: 16px;
+    background: white;
+    position: relative;
+  }
+  .manifesto::before {
+    content: 'MANIFESTO';
+    position: absolute; top: -10px; left: 28px;
+    background: var(--cream);
+    padding: 0 14px;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--terracotta);
+  }
+  .manifesto p {
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.9;
+    max-width: 680px;
+  }
+  .manifesto p strong { color: var(--sage); font-weight: 700; }
+
+  /* ── EVENTS ── */
+  .event-list { display: flex; flex-direction: column; gap: 12px; }
+  .event-item {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 32px; align-items: center;
+    background: white;
+    padding: 24px 28px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--sage);
+    transition: all 0.3s;
+  }
+  .event-item:nth-child(even) { border-left-color: var(--terracotta); }
+  .event-item:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(44,40,36,0.06); }
+  .event-day {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 14px;
+    color: var(--sage);
+  }
+  .event-item:nth-child(even) .event-day { color: var(--terracotta); }
+  .event-info h3 { font-size: 17px; color: var(--text-bright); margin-bottom: 4px; }
+  .event-info p { font-size: 13px; color: var(--text-mid); }
+  .event-time {
+    font-size: 13px; font-weight: 700;
+    color: var(--text-light);
+    text-align: right;
+  }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .contact-card {
+    background: white;
+    padding: 40px 32px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+  }
+  .contact-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(44,40,36,0.06); }
+  .contact-icon { font-size: 32px; margin-bottom: 16px; }
+  .contact-card h3 { font-size: 16px; color: var(--text-bright); margin-bottom: 8px; }
+  .contact-card p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+  .contact-card .highlight {
+    display: block; margin-top: 10px;
+    color: var(--sage);
+    font-weight: 700; font-size: 14px;
+  }
+  .contact-card:nth-child(even) .highlight { color: var(--terracotta); }
+
+  .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .loc-card {
+    background: white;
+    padding: 44px 36px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+  }
+  .loc-card:hover { box-shadow: 0 8px 24px rgba(44,40,36,0.06); }
+  .loc-card h3 { font-size: 22px; color: var(--sage); margin-bottom: 16px; }
+  .loc-card:nth-child(even) h3 { color: var(--terracotta); }
+  .loc-detail {
+    display: flex; gap: 8px;
+    font-size: 14px; color: var(--text-mid);
+    margin-bottom: 10px; align-items: flex-start;
+  }
+  .loc-detail .label {
+    color: var(--text-light); min-width: 100px;
+    font-weight: 700; text-transform: uppercase;
+    font-size: 10px; letter-spacing: 1px;
+    padding-top: 3px;
+  }
+
+  /* ── FAQ ── */
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; padding: 22px 0;
+    background: none; border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 500;
+    color: var(--text); text-align: left;
+    cursor: pointer;
+  }
+  .faq-q .icon {
+    color: var(--terracotta);
+    font-size: 18px; transition: transform 0.3s;
+    font-weight: 700;
+  }
+  .faq-q.open .icon { transform: rotate(45deg); color: var(--sage); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    font-size: 14px; color: var(--text-mid); line-height: 1.7;
+  }
+  .faq-a.open { max-height: 200px; padding-bottom: 22px; }
+
+  /* ── CTA BLOCK ── */
+  .cta-block {
+    border: 1.5px solid var(--sand);
+    padding: 64px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 32px;
+    border-radius: 20px;
+    background: white;
+  }
+  .cta-block::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 50%, rgba(91,123,94,0.05), transparent 60%),
+      radial-gradient(ellipse at 70% 50%, rgba(196,85,58,0.05), transparent 60%);
+  }
+  .cta-block h2 { position: relative; font-size: 34px; margin-bottom: 12px; }
+  .cta-block p { position: relative; font-size: 15px; color: var(--text-mid); margin-bottom: 28px; }
+  .cta-block .btn { position: relative; }
+
+  /* ── ORDER PAGE (BROKEN JOURNEY #1 & #2) ── */
+  .order-section { max-width: 640px; margin: 0 auto; padding: 48px 32px; }
+  .order-section h3 { font-size: 24px; color: var(--text-bright); margin-bottom: 8px; }
+  .order-section .order-sub { font-size: 14px; color: var(--text-mid); margin-bottom: 32px; line-height: 1.6; }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--text-mid);
+    margin-bottom: 6px;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 12px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    border: 1.5px solid var(--sand);
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--sage);
+  }
+  .form-error {
+    display: none;
+    font-size: 12px; color: var(--terracotta);
+    margin-top: 4px; font-weight: 500;
+  }
+  .form-error.show { display: block; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .price-display {
+    font-family: 'Fraunces', serif;
+    font-size: 28px; font-weight: 900;
+    color: var(--sage);
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+
+  /* ── REWARDS PAGE (BROKEN JOURNEY #3 & #4) ── */
+  .rewards-hero {
+    text-align: center;
+    padding: 80px 32px 40px;
+    background: linear-gradient(180deg, var(--sage-pale) 0%, var(--cream) 100%);
+  }
+  .rewards-hero h2 { font-size: clamp(32px, 5vw, 48px); color: var(--text-bright); margin-bottom: 12px; }
+  .rewards-hero p { font-size: 15px; color: var(--text-mid); max-width: 480px; margin: 0 auto; line-height: 1.7; }
+  .rewards-tabs {
+    display: flex; justify-content: center; gap: 8px;
+    margin: 32px auto 0; max-width: 360px;
+  }
+  .rewards-tab {
+    flex: 1; padding: 12px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 700;
+    background: white; border: 1.5px solid var(--sand);
+    border-radius: 8px; cursor: pointer;
+    color: var(--text-mid); transition: all 0.2s;
+  }
+  .rewards-tab.active { background: var(--sage); color: white; border-color: var(--sage); }
+  .rewards-tab:hover:not(.active) { border-color: var(--sage); color: var(--sage); }
+  .rewards-form-area { max-width: 420px; margin: 0 auto; padding: 40px 32px; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.7);
+    padding: 56px 32px 28px;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+  }
+  .footer-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 900; font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .footer-brand span { color: var(--terracotta-light); }
+  .footer p { font-size: 13px; line-height: 1.7; }
+  .footer h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--terracotta-light);
+    margin-bottom: 16px;
+  }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-links a {
+    font-size: 13px; color: rgba(255,255,255,0.6);
+    text-decoration: none; cursor: pointer;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: white; }
+  .footer-bottom {
+    max-width: 1200px; margin: 48px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: rgba(255,255,255,0.4);
+    flex-wrap: wrap; gap: 12px;
+  }
+
+  /* ── FADE IN ── */
+  .fi { opacity: 0; transform: translateY(16px); transition: opacity 0.6s, transform 0.6s; }
+  .fi.v { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-drink { display: none; }
+    .menu-grid { grid-template-columns: 1fr 1fr; }
+    .about-grid { grid-template-columns: 1fr; }
+    .location-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: block; }
+    .section { padding: 64px 20px; }
+    .menu-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .event-item { grid-template-columns: 1fr; gap: 8px; }
+    .event-time { text-align: left; }
+    .hero-inner { padding: 60px 20px; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .cta-block { margin: 0 20px; padding: 48px 24px; }
+    .manifesto { padding: 36px 24px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" onclick="showPage('home')">
+      <div class="nav-logo-icon">G</div>
+      <div class="nav-logo-text"><span>Glitch</span>craft</div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <button class="nav-link active" onclick="showPage('home')">Home</button>
+      <button class="nav-link" onclick="showPage('menu')">Menu</button>
+      <button class="nav-link" onclick="showPage('order')">Order</button>
+      <button class="nav-link" onclick="showPage('rewards')">Rewards</button>
+      <button class="nav-link" onclick="showPage('about')">About</button>
+      <button class="nav-link" onclick="showPage('contact')">Contact</button>
+    </div>
+    <button class="nav-cta" onclick="showPage('order')">Order Now</button>
+    <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('show')" aria-label="Menu">
+      <svg width="22" height="22" fill="none" stroke="#C4553A" stroke-width="2"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════ HOME ══════ -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">Now Open · Austin, TX</div>
+        <h1>
+          <span class="terra">Glitch</span>craft<br>
+          <span class="sage">Margarita</span><br>
+          Labs
+        </h1>
+        <div class="hero-sub">Where cocktails meet curiosity</div>
+        <p class="hero-desc">We broke the margarita and rebuilt it from scratch. Molecular techniques, house-fermented ingredients, zero rules. Every drink is an experiment. Every night is a lab session.</p>
+        <div class="hero-actions">
+          <button class="btn terra" onclick="showPage('menu')">See the Menu</button>
+          <button class="btn outline" onclick="showPage('order')">Order Online</button>
+        </div>
+      </div>
+      <div class="hero-drink">
+        <div class="drink-frame">
+          <div class="drink-art">🧪</div>
+        </div>
+        <div class="drink-name">The Buffer Overflow</div>
+        <div class="drink-desc">Mezcal · charred jalapeño · lime foam · activated charcoal salt</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-item sage">Open Wed–Sun</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item terra">Happy Glitch Hour 5–7pm</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item gold">Taco Lab Tuesdays</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item sage">Live DJ Fri & Sat</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item terra">Walk-ins Welcome</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item gold">New Menu Drops Monthly</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item sage">Open Wed–Sun</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item terra">Happy Glitch Hour 5–7pm</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item gold">Taco Lab Tuesdays</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item sage">Live DJ Fri & Sat</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item terra">Walk-ins Welcome</span><span class="marquee-sep">◆</span>
+      <span class="marquee-item gold">New Menu Drops Monthly</span><span class="marquee-sep">◆</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header fi">
+        <div class="tag-label">Featured Experiments</div>
+        <h2>What's on the <span class="sage">lab bench</span></h2>
+        <p>Our bartenders are mad scientists. Every drink is crafted with molecular techniques, house fermentations, and ingredients you won't find anywhere else.</p>
+      </div>
+      <div class="menu-grid fi">
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🍋</span><span class="menu-price">$16</span></div><h3>Segfault Sour</h3><p>Blanco tequila, yuzu cordial, butterfly pea flower, egg white foam, electric bitters</p><div class="menu-badge">Staff Pick</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🔥</span><span class="menu-price">$18</span></div><h3>The Buffer Overflow</h3><p>Mezcal, charred jalapeño syrup, lime foam, activated charcoal salt rim, smoked</p><div class="menu-badge">Spicy</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🫧</span><span class="menu-price">$17</span></div><h3>Null Pointer</h3><p>Reposado, coconut fat-wash, clarified pineapple, ghost pepper tincture, lime dust</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">💜</span><span class="menu-price">$15</span></div><h3>404 Not Found</h3><p>Blanco, ube syrup, oat milk, lime, toasted coconut. Creamy, purple, unhinged.</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🧊</span><span class="menu-price">$19</span></div><h3>Kernel Panic</h3><p>Añejo, cold brew reduction, mole bitters, single ice sphere, cacao nib dust</p><div class="menu-badge">New</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🍉</span><span class="menu-price">$14</span></div><h3>Soft Reboot</h3><p>No ABV. Watermelon agua fresca, jalapeño, lime, smoked salt. All flavor, zero crash.</p><div class="menu-badge">Zero Proof</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom:96px;">
+    <div class="cta-block fi">
+      <h2><span class="terra">Ready to</span> <span class="sage">glitch out?</span></h2>
+      <p>Walk-ins welcome Wed–Sun. Reservations recommended for groups of 6+.</p>
+      <button class="btn terra" onclick="showPage('order')">Order Online</button>
+    </div>
+  </section>
+</div>
+
+<!-- ══════ MENU ══════ -->
+<div class="page" id="page-menu">
+  <div class="about-hero-sec" style="padding-bottom:40px;">
+    <div class="about-inner">
+      <div class="tag-label">Full Menu</div>
+      <h2 style="font-size:clamp(36px,5vw,52px);color:var(--text-bright);margin-bottom:12px;">The <span style="color:var(--sage)">Lab</span> Menu</h2>
+      <p style="font-size:15px;color:var(--text-mid);max-width:480px;line-height:1.7;">Every drink is numbered and versioned. Menu rotates monthly. Some experiments stick around. Some don't. That's the point.</p>
+    </div>
+  </div>
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner">
+      <div class="section-header fi"><div class="tag-label">Margarita Experiments</div><h2>Signature <span class="sage">Builds</span></h2></div>
+      <div class="menu-grid fi">
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🍋</span><span class="menu-price">$16</span></div><h3>Segfault Sour</h3><p>Blanco tequila, yuzu cordial, butterfly pea flower, egg white foam, electric bitters</p><div class="menu-badge">Staff Pick</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🔥</span><span class="menu-price">$18</span></div><h3>The Buffer Overflow</h3><p>Mezcal, charred jalapeño syrup, lime foam, activated charcoal salt rim, smoked tableside</p><div class="menu-badge">Spicy</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🫧</span><span class="menu-price">$17</span></div><h3>Null Pointer</h3><p>Reposado, coconut fat-wash, clarified pineapple, ghost pepper tincture, lime dust</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">💜</span><span class="menu-price">$15</span></div><h3>404 Not Found</h3><p>Blanco, ube syrup, oat milk, lime, toasted coconut. Creamy, purple, unhinged.</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🧊</span><span class="menu-price">$19</span></div><h3>Kernel Panic</h3><p>Añejo, cold brew reduction, mole bitters, single ice sphere, cacao nib dust</p><div class="menu-badge">New</div></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🍉</span><span class="menu-price">$14</span></div><h3>Soft Reboot</h3><p>No ABV. Watermelon agua fresca, jalapeño, lime, smoked salt. All flavor, zero crash.</p><div class="menu-badge">Zero Proof</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px;">
+    <div class="section-inner">
+      <div class="section-header fi"><div class="tag-label">Lab Snacks</div><h2>Fuel for the <span class="terra">Experiment</span></h2></div>
+      <div class="menu-grid fi">
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🌮</span><span class="menu-price">$12</span></div><h3>Brisket Tacos</h3><p>12-hour smoked brisket, pickled onion, salsa verde, micro cilantro, corn tortilla</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🥑</span><span class="menu-price">$14</span></div><h3>Tableside Guac</h3><p>Made to order. Avocado, serrano, lime, radish, chicharrón crumble. Served with warm chips.</p></div>
+        <div class="menu-card"><div class="menu-card-top"><span class="menu-emoji">🧀</span><span class="menu-price">$11</span></div><h3>Elote Nachos</h3><p>House-made chips, street corn crema, cotija, tajín dust, pickled jalapeño, lime drizzle</p><div class="menu-badge">Shareable</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════ ORDER (BROKEN JOURNEYS: build-your-own + checkout) ══════ -->
+<div class="page" id="page-order">
+  <div class="about-hero-sec" style="padding-bottom:40px;">
+    <div class="about-inner">
+      <div class="tag-label">Order Online</div>
+      <h2 style="font-size:clamp(32px,5vw,48px);color:var(--text-bright);margin-bottom:12px;">Build Your <span style="color:var(--sage)">Own</span></h2>
+      <p style="font-size:15px;color:var(--text-mid);max-width:480px;line-height:1.7;">Pick your base, choose your flavors, and we'll mix it fresh. Party packs available for groups.</p>
+    </div>
+  </div>
+
+  <div class="order-section" id="order-builder">
+    <h3>🧪 Build Your Own Margarita</h3>
+    <p class="order-sub">Customize your perfect drink. Select a base spirit, mixers, and extras.</p>
+
+    <div class="form-group">
+      <label>Base Spirit</label>
+      <select id="buildBase" onchange="updatePrice()">
+        <option value="">Select a spirit...</option>
+        <option value="14">Blanco Tequila (+$14)</option>
+        <option value="16">Reposado Tequila (+$16)</option>
+        <option value="18">Añejo Tequila (+$18)</option>
+        <option value="17">Mezcal (+$17)</option>
+        <option value="12">No ABV Base (+$12)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Mixer</label>
+      <select id="buildMixer" onchange="updatePrice()">
+        <option value="">Select a mixer...</option>
+        <option value="3">Classic Lime (+$3)</option>
+        <option value="4">Yuzu Cordial (+$4)</option>
+        <option value="4">Charred Jalapeño Syrup (+$4)</option>
+        <option value="5">Ube Syrup (+$5)</option>
+        <option value="3">Watermelon Agua Fresca (+$3)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Extras (optional)</label>
+      <select id="buildExtra" onchange="updatePrice()">
+        <option value="0">None</option>
+        <option value="2">Egg White Foam (+$2)</option>
+        <option value="2">Lime Foam (+$2)</option>
+        <option value="3">Charcoal Salt Rim (+$3)</option>
+        <option value="3">Coconut Fat-Wash (+$3)</option>
+        <option value="2">Smoked Tableside (+$2)</option>
+      </select>
+    </div>
+
+    <!-- BUG: Price shows $0.00 regardless of selections -->
+    <div class="price-display">
+      <span>Your Total</span>
+      <span id="buildPrice">$0.00</span>
+    </div>
+
+    <div style="margin-top:24px;">
+      <button class="btn terra" style="width:100%;" onclick="showCheckout()">Continue to Checkout</button>
+    </div>
+  </div>
+
+  <!-- CHECKOUT FORM (BROKEN: clears on validation error) -->
+  <div class="order-section" id="order-checkout" style="display:none;">
+    <h3>📦 Checkout</h3>
+    <p class="order-sub">Enter your delivery details to complete your order.</p>
+
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="checkName" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="checkEmail" placeholder="you@email.com">
+    </div>
+    <div class="form-group">
+      <label>Street Address</label>
+      <input type="text" id="checkAddress" placeholder="123 Rainey Street">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" id="checkCity" placeholder="Austin">
+      </div>
+      <div class="form-group">
+        <label>Zip Code</label>
+        <input type="text" id="checkZip" placeholder="78701">
+        <div class="form-error" id="zipError">Invalid zip code format</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Credit Card Number</label>
+      <input type="text" id="checkCard" placeholder="4242 4242 4242 4242">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Expiry</label>
+        <input type="text" id="checkExp" placeholder="MM/YY">
+      </div>
+      <div class="form-group">
+        <label>CVC</label>
+        <input type="text" id="checkCvc" placeholder="123">
+      </div>
+    </div>
+
+    <div style="margin-top:28px;">
+      <button class="btn terra" style="width:100%;" onclick="submitOrder()">Place Order</button>
+    </div>
+    <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-light);">This is a demo — no real orders are processed.</p>
+  </div>
+</div>
+
+<!-- ══════ REWARDS (BROKEN JOURNEYS: signup + login) ══════ -->
+<div class="page" id="page-rewards">
+  <div class="rewards-hero">
+    <div class="tag-label center">Rewards Program</div>
+    <h2>Glitchcraft <span style="color:var(--sage)">Rewards</span></h2>
+    <p>Earn points on every drink. Get free upgrades, early access to new menu drops, and exclusive merch.</p>
+    <div class="rewards-tabs">
+      <button class="rewards-tab active" onclick="showRewardsTab('signup')">Sign Up</button>
+      <button class="rewards-tab" onclick="showRewardsTab('login')">Log In</button>
+    </div>
+  </div>
+
+  <!-- SIGNUP (BROKEN: email validation rejects valid emails) -->
+  <div class="rewards-form-area" id="rewards-signup">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="rewardName" placeholder="Your name">
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" id="rewardEmail" placeholder="you@email.com">
+      <div class="form-error" id="rewardEmailError"></div>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="rewardPass" placeholder="Create a password">
+    </div>
+    <button class="btn sage" style="width:100%;" onclick="submitRewardSignup()">Join Rewards</button>
+    <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--text-light);">Get 10% off your first order when you sign up.</p>
+  </div>
+
+  <!-- LOGIN (BROKEN: silently fails, no feedback) -->
+  <div class="rewards-form-area" id="rewards-login" style="display:none;">
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" id="loginEmail" placeholder="you@email.com">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="loginPass" placeholder="Your password">
+      <div class="form-error" id="loginError"></div>
+    </div>
+    <button class="btn sage" style="width:100%;" id="loginBtn" onclick="submitLogin()">Log In</button>
+    <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--text-light);">Forgot password? Contact us at hello@glitchcraftlabs.com</p>
+  </div>
+</div>
+
+<!-- ══════ ABOUT ══════ -->
+<div class="page" id="page-about">
+  <div class="about-hero-sec">
+    <div class="about-inner">
+      <div class="tag-label">Our Story</div>
+      <h2 style="font-size:clamp(36px,5vw,52px);color:var(--text-bright);margin-bottom:12px;">Built by <span style="color:var(--terracotta)">accident</span></h2>
+      <p style="font-size:15px;color:var(--text-mid);max-width:520px;line-height:1.7;">Glitchcraft started when a bartender, a chemist, and a DJ walked into a garage in East Austin. That's not a joke — that's literally how this started. We wanted to make drinks that didn't exist yet.</p>
+    </div>
+  </div>
+  <section class="section" style="padding-top:0;">
+    <div class="section-inner">
+      <div class="about-grid fi">
+        <div class="about-cell"><div class="num">347</div><h4>Original Recipes</h4><p>Every drink on our menu was invented here. We don't do "inspired by" — we do "what if we tried this."</p></div>
+        <div class="about-cell"><div class="num">18mo</div><h4>In Business</h4><p>Opened our doors on Rainey Street in late 2024. Still standing. Somehow.</p></div>
+        <div class="about-cell"><div class="num">12</div><h4>Staff Scientists</h4><p>Bartenders, fermentation nerds, flavor chemists. Everyone here has an opinion about agave.</p></div>
+        <div class="about-cell"><div class="num">0</div><h4>Rules</h4><p>No dress code. No pretension. No rules about what a margarita should be.</p></div>
+      </div>
+      <div class="manifesto fi">
+        <p>We believe the margarita is the most <strong>underestimated cocktail in existence</strong>. Most bars treat it as an afterthought — sour mix, cheap tequila, salt, done. We treat it as a canvas. Every ingredient is intentional. Every technique is borrowed from somewhere unexpected. We ferment our own syrups. We clarify juice with milk. We smoke things that probably shouldn't be smoked. <strong>The result is something familiar but completely new.</strong></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════ CONTACT ══════ -->
+<div class="page" id="page-contact">
+  <div class="about-hero-sec" style="padding-bottom:40px;">
+    <div class="about-inner">
+      <div class="tag-label">Get In Touch</div>
+      <h2 style="font-size:clamp(36px,5vw,52px);color:var(--text-bright);margin-bottom:12px;">Find the <span style="color:var(--sage)">Lab</span></h2>
+      <p style="font-size:15px;color:var(--text-mid);max-width:460px;line-height:1.7;">Walk-ins welcome. Reservations recommended for groups. DMs open for collabs, press, and weird ideas.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner">
+      <div class="contact-grid fi">
+        <div class="contact-card"><div class="contact-icon">📍</div><h3>Location</h3><p>78 Rainey St, Unit B<br>Austin, TX 78701</p><span class="highlight">Rainey Street District</span></div>
+        <div class="contact-card"><div class="contact-icon">🕐</div><h3>Hours</h3><p>Tue: 5pm–11pm<br>Wed–Thu: 5pm–12am<br>Fri–Sat: 5pm–2am<br>Sun: 11am–5pm<br>Mon: Closed</p></div>
+        <div class="contact-card"><div class="contact-icon">📱</div><h3>Connect</h3><p>@glitchcraftlabs on everything</p><span class="highlight">DMs always open</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="location-grid fi">
+        <div class="loc-card"><h3>Reservations</h3><div class="loc-detail"><span class="label">Groups</span><span>Recommended for 6+ people</span></div><div class="loc-detail"><span class="label">Book via</span><span>Resy or DM us @glitchcraftlabs</span></div><div class="loc-detail"><span class="label">Buyouts</span><span>Available Sun/Mon/Tue — email us</span></div><div class="loc-detail"><span class="label">Large parties</span><span>We can seat up to 80</span></div></div>
+        <div class="loc-card"><h3>Collabs & Press</h3><div class="loc-detail"><span class="label">Email</span><span>hello@glitchcraftlabs.com</span></div><div class="loc-detail"><span class="label">Press kit</span><span>Available on request</span></div><div class="loc-detail"><span class="label">Pop-ups</span><span>We travel. Let's talk.</span></div><div class="loc-detail"><span class="label">Merch</span><span>In-store only. For now.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header center fi"><div class="tag-label center">FAQ</div><h2>Quick <span class="sage">Answers</span></h2></div>
+      <div class="faq-list fi">
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you take walk-ins?<span class="icon">+</span></button><div class="faq-a">Absolutely. Most of our seating is walk-in. Reservations are only recommended for groups of 6 or more, or if you want to guarantee a specific time on Fri/Sat nights.</div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you have non-alcoholic options?<span class="icon">+</span></button><div class="faq-a">Hell yes. Our Zero Proof Protocols section has dedicated mocktails built with the same care as our boozy experiments. The Soft Reboot is a fan favorite.</div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is there food?<span class="icon">+</span></button><div class="faq-a">We've got Lab Snacks — tacos, nachos, tableside guac, and rotating specials. It's bar food, but the kind that makes you want to order another round.</div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What's the vibe like?<span class="icon">+</span></button><div class="faq-a">Warm, lively, and a little weird. Think neighborhood bar meets tasting lab. No dress code. Come as you are. Leave a little weirder.</div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I book the space for a private event?<span class="icon">+</span></button><div class="faq-a">Full buyouts available Sun–Tue. We can do seated for 80 or standing for 120. Custom drink menus, DJ coordination, the works. Email hello@glitchcraftlabs.com.</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span>Glitch</span>craft</div>
+      <p>Margarita Labs — Austin, TX. We broke the margarita and rebuilt it from scratch. Come glitch out with us.</p>
+    </div>
+    <div>
+      <h5>Navigate</h5>
+      <ul class="footer-links">
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('menu')">Menu</a></li>
+        <li><a onclick="showPage('order')">Order</a></li>
+        <li><a onclick="showPage('rewards')">Rewards</a></li>
+        <li><a onclick="showPage('about')">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Visit</h5>
+      <ul class="footer-links">
+        <li><a>78 Rainey St, Austin TX</a></li>
+        <li><a>Tue–Sat 5pm+</a></li>
+        <li><a>Sun 11am–5pm</a></li>
+        <li><a>Mon Closed</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul class="footer-links">
+        <li><a>Instagram</a></li>
+        <li><a>TikTok</a></li>
+        <li><a>X / Twitter</a></li>
+        <li><a>Resy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Glitchcraft Margarita Labs. All rights reserved.</span>
+    <span>Glitchcraft is a fictional brand created for demonstration purposes. Please drink responsibly.</span>
+  </div>
+</footer>
+
+<script>
+  // ── Navigation ──
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    const map = {home:0, menu:1, order:2, rewards:3, about:4, contact:5};
+    document.querySelectorAll('.nav-link')[map[id]]?.classList.add('active');
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    setTimeout(initObs, 100);
+  }
+
+  function toggleFaq(btn) {
+    const a = btn.nextElementSibling;
+    const open = a.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
+    if (!open) { a.classList.add('open'); btn.classList.add('open'); }
+  }
+
+  function initObs() {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('v'); obs.unobserve(e.target); }});
+    }, {threshold: 0.1});
+    document.querySelectorAll('.fi:not(.v)').forEach(el => obs.observe(el));
+  }
+  initObs();
+
+  // ── BUG #1: Build Your Own — Price never updates ──
+  // The function exists but has a deliberate bug: it always shows $0.00
+  function updatePrice() {
+    // BUG: Missing parseInt on .value — always evaluates to NaN, falls back to 0
+    var base = document.getElementById('buildBase').value;
+    var mixer = document.getElementById('buildMixer').value;
+    var extra = document.getElementById('buildExtra').value;
+    // This line looks right but base/mixer are strings that don't parse correctly
+    // because the select values are set but the calculation has a scoping bug
+    var total = 0; // BUG: should be parseInt(base||0) + parseInt(mixer||0) + parseInt(extra||0)
+    document.getElementById('buildPrice').textContent = '$' + total.toFixed(2);
+  }
+
+  function showCheckout() {
+    document.getElementById('order-builder').style.display = 'none';
+    document.getElementById('order-checkout').style.display = 'block';
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  // ── BUG #2: Checkout — Form clears on validation error ──
+  function submitOrder() {
+    var zip = document.getElementById('checkZip').value;
+    // Validate zip
+    if (!/^\d{5}$/.test(zip)) {
+      document.getElementById('zipError').classList.add('show');
+      // BUG: clears ALL form fields on validation error
+      document.querySelectorAll('#order-checkout input').forEach(function(input) {
+        input.value = '';
+      });
+      // BUG: throws an error trying to call validate on undefined
+      try {
+        undefined.validate();
+      } catch(e) {
+        console.error(e);
+      }
+      return;
+    }
+    document.getElementById('zipError').classList.remove('show');
+    alert('Demo only — no order was placed. But your margarita would have been amazing!');
+  }
+
+  // ── BUG #3: Rewards Signup — Email validation too strict ──
+  function submitRewardSignup() {
+    var email = document.getElementById('rewardEmail').value;
+    var errorEl = document.getElementById('rewardEmailError');
+    // BUG: Regex rejects emails with +, dots before @, and some valid TLDs
+    var strictRegex = /^[a-zA-Z0-9]@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+    if (!strictRegex.test(email)) {
+      errorEl.textContent = 'Invalid email format';
+      errorEl.classList.add('show');
+      // BUG: no other feedback, form.submit is not a function
+      try { document.getElementById('rewards-signup').submit(); } catch(e) { console.error(e); }
+      return;
+    }
+    errorEl.classList.remove('show');
+    alert('Welcome to Glitchcraft Rewards! Check your email for confirmation.');
+  }
+
+  // ── BUG #4: Rewards Login — Silently fails ──
+  function submitLogin() {
+    var btn = document.getElementById('loginBtn');
+    btn.disabled = true;
+    btn.textContent = 'Logging in...';
+    btn.style.opacity = '0.6';
+    // BUG: Fetch to non-existent endpoint — fails silently, no error shown to user
+    fetch('/api/auth/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        email: document.getElementById('loginEmail').value,
+        password: document.getElementById('loginPass').value
+      })
+    }).then(function() {
+      // This never resolves successfully, but even if it did, there's no redirect
+    }).catch(function(e) {
+      // BUG: Catches the error but doesn't show anything to the user
+      console.error('Login failed:', e);
+      // Button stays disabled — user is stuck
+    });
+  }
+
+  // ── Rewards Tab Switcher ──
+  function showRewardsTab(tab) {
+    document.querySelectorAll('.rewards-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('rewards-signup').style.display = tab === 'signup' ? 'block' : 'none';
+    document.getElementById('rewards-login').style.display = tab === 'login' ? 'block' : 'none';
+    event.target.classList.add('active');
+  }
+
+  // Mobile nav
+  const ms = document.createElement('style');
+  ms.textContent = `@media(max-width:768px){.nav-links.show{display:flex!important;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:rgba(251,247,240,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:12px 20px;z-index:99;}}`;
+  document.head.appendChild(ms);
+</script>
+
+</body>
+</html>

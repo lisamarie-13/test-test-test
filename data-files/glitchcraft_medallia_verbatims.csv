@@ -1,0 +1,534 @@
+response_id,timestamp,date,channel,page_url,device,csat_score,nps_score,ces_score,verbatim,journey_stage,sentiment,resolved
+MED-5001,2026-04-16T14:33:00,2026-04-16,web_intercept,/order/build-your-own,mobile,2,3,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5002,2026-04-16T21:43:00,2026-04-16,email_survey,/rewards/signup,desktop,2,2,6,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5003,2026-04-16T20:05:00,2026-04-16,post_purchase,/rewards/signup,mobile,2,1,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,negative,False
+MED-5004,2026-04-16T16:05:00,2026-04-16,email_survey,/rewards/signup,desktop,2,2,6,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5005,2026-04-16T19:10:00,2026-04-16,email_survey,/menu,desktop,3,8,1,Really enjoy the recipes section. Made the classic lime at home!,browse,neutral,True
+MED-5006,2026-04-16T10:30:00,2026-04-16,app_feedback,/rewards/signup,mobile,3,2,5,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,neutral,True
+MED-5007,2026-04-16T13:08:00,2026-04-16,email_survey,/rewards/signup,mobile,1,3,7,I want to join the rewards program but the email field rejects my address. Please fix this.,signup,negative,False
+MED-5008,2026-04-16T20:08:00,2026-04-16,email_survey,/order/checkout,mobile,2,2,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5009,2026-04-16T14:07:00,2026-04-16,web_intercept,/menu,desktop,5,10,3,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5010,2026-04-16T13:49:00,2026-04-16,app_feedback,/order/checkout,desktop,2,1,5,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5011,2026-04-16T12:00:00,2026-04-16,web_intercept,/order/checkout,mobile,2,1,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,False
+MED-5012,2026-04-16T13:34:00,2026-04-16,web_intercept,/order/checkout,mobile,2,3,6,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,True
+MED-5013,2026-04-16T11:41:00,2026-04-16,post_purchase,/locations,desktop,4,9,1,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5014,2026-04-16T20:05:00,2026-04-16,web_intercept,/order/checkout,mobile,3,1,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,neutral,False
+MED-5015,2026-04-16T22:57:00,2026-04-16,web_intercept,/rewards/signup,mobile,2,3,6,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5016,2026-04-16T17:55:00,2026-04-16,app_feedback,/blog,desktop,5,7,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,False
+MED-5017,2026-04-16T19:18:00,2026-04-16,web_intercept,/,desktop,4,7,2,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5018,2026-04-16T19:14:00,2026-04-16,post_purchase,/order/checkout,desktop,2,3,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5019,2026-04-16T18:47:00,2026-04-16,web_intercept,/,mobile,5,10,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,False
+MED-5020,2026-04-16T14:29:00,2026-04-16,email_survey,/rewards/signup,desktop,1,3,7,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5021,2026-04-17T08:26:00,2026-04-17,app_feedback,/order/checkout,mobile,2,0,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5022,2026-04-17T12:29:00,2026-04-17,email_survey,/blog,desktop,3,6,2,Really enjoy the recipes section. Made the classic lime at home!,browse,neutral,True
+MED-5023,2026-04-17T10:23:00,2026-04-17,post_purchase,/recipes,desktop,5,9,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5024,2026-04-17T22:30:00,2026-04-17,post_purchase,/order/build-your-own,desktop,4,5,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,True
+MED-5025,2026-04-17T09:21:00,2026-04-17,email_survey,/rewards/login,mobile,2,3,7,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,negative,False
+MED-5026,2026-04-17T13:26:00,2026-04-17,email_survey,/order/checkout,mobile,3,2,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,neutral,True
+MED-5027,2026-04-17T20:18:00,2026-04-17,web_intercept,/order/checkout,mobile,1,2,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,True
+MED-5028,2026-04-17T12:17:00,2026-04-17,post_purchase,/rewards/signup,mobile,1,2,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5029,2026-04-17T16:05:00,2026-04-17,post_purchase,/order/checkout,desktop,1,2,7,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5030,2026-04-17T16:41:00,2026-04-17,post_purchase,/order/checkout,mobile,1,4,5,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5031,2026-04-17T22:21:00,2026-04-17,web_intercept,/order/build-your-own,desktop,4,3,5,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,positive,False
+MED-5032,2026-04-17T16:46:00,2026-04-17,web_intercept,/rewards/signup,desktop,1,2,6,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5033,2026-04-17T17:55:00,2026-04-17,post_purchase,/order/checkout,desktop,1,4,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5034,2026-04-17T08:37:00,2026-04-17,post_purchase,/locations,mobile,3,9,2,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5035,2026-04-17T09:31:00,2026-04-17,web_intercept,/order/build-your-own,mobile,2,4,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5036,2026-04-17T20:53:00,2026-04-17,web_intercept,/order/checkout,desktop,3,2,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,neutral,False
+MED-5037,2026-04-17T20:55:00,2026-04-17,email_survey,/order/build-your-own,desktop,4,3,6,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,False
+MED-5038,2026-04-18T08:13:00,2026-04-18,app_feedback,/rewards/signup,mobile,1,2,7,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5039,2026-04-18T10:40:00,2026-04-18,web_intercept,/order/build-your-own,mobile,2,2,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5040,2026-04-18T14:59:00,2026-04-18,web_intercept,/catering,mobile,4,7,1,Your website loads really fast on desktop. Nice job.,browse,positive,False
+MED-5041,2026-04-18T17:05:00,2026-04-18,email_survey,/rewards/signup,mobile,2,4,5,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,negative,False
+MED-5042,2026-04-18T22:51:00,2026-04-18,email_survey,/order/checkout,desktop,3,0,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,neutral,True
+MED-5043,2026-04-18T18:51:00,2026-04-18,web_intercept,/rewards/signup,desktop,3,3,5,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,neutral,True
+MED-5044,2026-04-18T14:33:00,2026-04-18,web_intercept,/catering,desktop,3,10,1,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5045,2026-04-18T18:01:00,2026-04-18,post_purchase,/order/checkout,mobile,2,3,5,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,False
+MED-5046,2026-04-18T22:42:00,2026-04-18,web_intercept,/rewards/signup,mobile,1,3,5,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5047,2026-04-18T10:44:00,2026-04-18,web_intercept,/rewards/login,mobile,3,2,5,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,neutral,True
+MED-5048,2026-04-18T09:53:00,2026-04-18,web_intercept,/order/build-your-own,mobile,2,4,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,negative,False
+MED-5049,2026-04-18T08:01:00,2026-04-18,post_purchase,/order/checkout,desktop,1,4,5,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,True
+MED-5050,2026-04-18T14:05:00,2026-04-18,web_intercept,/order/checkout,mobile,1,0,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5051,2026-04-18T19:22:00,2026-04-18,email_survey,/catering,mobile,5,9,3,Would love to see nutritional info on the menu pages.,browse,positive,False
+MED-5052,2026-04-18T09:17:00,2026-04-18,web_intercept,/order/build-your-own,mobile,2,3,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5053,2026-04-18T12:04:00,2026-04-18,web_intercept,/rewards/login,desktop,4,5,4,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,positive,True
+MED-5054,2026-04-18T20:20:00,2026-04-18,web_intercept,/order/checkout,desktop,3,3,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,neutral,True
+MED-5055,2026-04-18T09:37:00,2026-04-18,app_feedback,/order/checkout,desktop,1,2,6,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5056,2026-04-18T17:05:00,2026-04-18,web_intercept,/rewards/signup,mobile,3,1,7,I want to join the rewards program but the email field rejects my address. Please fix this.,signup,neutral,True
+MED-5057,2026-04-18T20:20:00,2026-04-18,email_survey,/,mobile,5,10,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5058,2026-04-19T19:18:00,2026-04-19,post_purchase,/order/checkout,desktop,2,1,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5059,2026-04-19T12:33:00,2026-04-19,web_intercept,/catering,mobile,3,9,2,Love the menu selection. The spicy mango is incredible.,browse,neutral,True
+MED-5060,2026-04-19T09:16:00,2026-04-19,post_purchase,/catering,desktop,5,6,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5061,2026-04-19T12:32:00,2026-04-19,email_survey,/order/checkout,desktop,1,4,6,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,False
+MED-5062,2026-04-19T11:39:00,2026-04-19,web_intercept,/order/checkout,desktop,2,4,5,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,False
+MED-5063,2026-04-19T19:25:00,2026-04-19,email_survey,/rewards/signup,desktop,1,1,6,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,negative,False
+MED-5064,2026-04-19T21:59:00,2026-04-19,web_intercept,/order/checkout,mobile,2,0,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,True
+MED-5065,2026-04-19T21:35:00,2026-04-19,web_intercept,/order/checkout,mobile,3,2,7,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,True
+MED-5066,2026-04-19T16:02:00,2026-04-19,web_intercept,/order/checkout,mobile,1,1,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5067,2026-04-19T13:44:00,2026-04-19,email_survey,/menu,mobile,4,7,2,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5068,2026-04-19T10:38:00,2026-04-19,post_purchase,/blog,desktop,5,10,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5069,2026-04-20T14:02:00,2026-04-20,web_intercept,/locations,mobile,3,10,3,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5070,2026-04-20T20:44:00,2026-04-20,email_survey,/order/build-your-own,mobile,3,3,6,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5071,2026-04-20T08:11:00,2026-04-20,email_survey,/rewards/signup,desktop,2,4,5,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,False
+MED-5072,2026-04-20T21:59:00,2026-04-20,post_purchase,/rewards/signup,mobile,3,4,6,I want to join the rewards program but the email field rejects my address. Please fix this.,signup,neutral,True
+MED-5073,2026-04-20T09:58:00,2026-04-20,app_feedback,/order/checkout,mobile,2,1,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,True
+MED-5074,2026-04-20T10:08:00,2026-04-20,web_intercept,/order/build-your-own,mobile,2,4,5,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5075,2026-04-20T10:15:00,2026-04-20,web_intercept,/recipes,mobile,5,6,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5076,2026-04-20T13:01:00,2026-04-20,web_intercept,/rewards/login,desktop,4,5,4,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,positive,False
+MED-5077,2026-04-20T10:29:00,2026-04-20,email_survey,/order/checkout,desktop,2,1,7,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5078,2026-04-20T08:04:00,2026-04-20,email_survey,/order/checkout,mobile,1,2,7,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,True
+MED-5079,2026-04-20T19:00:00,2026-04-20,email_survey,/order/checkout,mobile,3,4,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,neutral,True
+MED-5080,2026-04-20T21:58:00,2026-04-20,web_intercept,/order/checkout,desktop,3,3,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,False
+MED-5081,2026-04-20T08:43:00,2026-04-20,email_survey,/rewards/signup,mobile,3,1,6,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,neutral,True
+MED-5082,2026-04-21T19:58:00,2026-04-21,post_purchase,/catering,desktop,4,10,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5083,2026-04-21T16:16:00,2026-04-21,email_survey,/order/build-your-own,mobile,2,5,6,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,negative,False
+MED-5084,2026-04-21T16:11:00,2026-04-21,post_purchase,/order/checkout,mobile,2,4,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5085,2026-04-21T11:19:00,2026-04-21,web_intercept,/order/checkout,mobile,3,0,5,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,True
+MED-5086,2026-04-21T16:29:00,2026-04-21,web_intercept,/order/build-your-own,mobile,3,4,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,neutral,True
+MED-5087,2026-04-21T17:03:00,2026-04-21,email_survey,/recipes,mobile,5,7,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5088,2026-04-21T14:21:00,2026-04-21,web_intercept,/rewards/login,desktop,3,3,4,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,neutral,True
+MED-5089,2026-04-21T18:48:00,2026-04-21,app_feedback,/rewards/signup,mobile,3,1,5,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,neutral,True
+MED-5090,2026-04-21T08:46:00,2026-04-21,app_feedback,/locations,mobile,5,9,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5091,2026-04-21T10:41:00,2026-04-21,web_intercept,/rewards/login,mobile,3,5,6,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,neutral,True
+MED-5092,2026-04-21T10:39:00,2026-04-21,post_purchase,/rewards/login,desktop,3,4,6,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,neutral,False
+MED-5093,2026-04-21T15:43:00,2026-04-21,email_survey,/rewards/signup,mobile,1,4,6,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5094,2026-04-21T22:57:00,2026-04-21,email_survey,/rewards/login,mobile,4,5,4,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,positive,True
+MED-5095,2026-04-21T19:12:00,2026-04-21,email_survey,/order/checkout,desktop,2,3,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,True
+MED-5096,2026-04-21T11:08:00,2026-04-21,email_survey,/menu,mobile,5,6,1,Mobile site needs work. Some buttons are hard to tap.,browse,positive,False
+MED-5097,2026-04-21T11:38:00,2026-04-21,web_intercept,/menu,mobile,5,6,1,Your website loads really fast on desktop. Nice job.,browse,positive,False
+MED-5098,2026-04-21T13:58:00,2026-04-21,web_intercept,/order/checkout,desktop,2,3,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5099,2026-04-21T21:55:00,2026-04-21,email_survey,/order/checkout,desktop,1,1,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5100,2026-04-21T18:30:00,2026-04-21,app_feedback,/order/checkout,mobile,2,2,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5101,2026-04-21T16:38:00,2026-04-21,email_survey,/order/build-your-own,mobile,3,2,5,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5102,2026-04-22T13:22:00,2026-04-22,app_feedback,/catering,mobile,5,8,3,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5103,2026-04-22T21:14:00,2026-04-22,app_feedback,/order/build-your-own,mobile,4,4,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,True
+MED-5104,2026-04-22T09:22:00,2026-04-22,web_intercept,/,desktop,5,9,1,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5105,2026-04-22T16:25:00,2026-04-22,post_purchase,/order/build-your-own,mobile,2,3,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,True
+MED-5106,2026-04-22T10:56:00,2026-04-22,web_intercept,/catering,desktop,4,8,2,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5107,2026-04-22T08:08:00,2026-04-22,email_survey,/locations,mobile,3,6,2,"Great margaritas, website could use some work though.",browse,neutral,True
+MED-5108,2026-04-22T22:07:00,2026-04-22,web_intercept,/order/build-your-own,mobile,2,2,4,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,negative,False
+MED-5109,2026-04-22T15:24:00,2026-04-22,web_intercept,/order/checkout,mobile,3,4,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5110,2026-04-22T21:56:00,2026-04-22,web_intercept,/locations,mobile,4,10,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5111,2026-04-22T11:06:00,2026-04-22,email_survey,/blog,desktop,5,7,2,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5112,2026-04-22T10:01:00,2026-04-22,web_intercept,/,mobile,3,8,2,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5113,2026-04-23T14:38:00,2026-04-23,web_intercept,/order/checkout,mobile,2,2,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,True
+MED-5114,2026-04-23T12:42:00,2026-04-23,email_survey,/order/checkout,mobile,2,0,6,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5115,2026-04-23T11:39:00,2026-04-23,web_intercept,/rewards/login,desktop,2,2,6,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,False
+MED-5116,2026-04-23T20:07:00,2026-04-23,email_survey,/order/build-your-own,mobile,2,2,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5117,2026-04-23T21:16:00,2026-04-23,web_intercept,/order/checkout,desktop,2,0,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,True
+MED-5118,2026-04-23T18:38:00,2026-04-23,post_purchase,/order/checkout,desktop,3,0,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5119,2026-04-23T19:29:00,2026-04-23,app_feedback,/order/build-your-own,mobile,4,5,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,True
+MED-5120,2026-04-23T22:41:00,2026-04-23,post_purchase,/menu,mobile,5,10,1,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5121,2026-04-23T12:24:00,2026-04-23,web_intercept,/rewards/login,desktop,4,5,6,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,positive,True
+MED-5122,2026-04-23T13:08:00,2026-04-23,web_intercept,/order/build-your-own,desktop,4,3,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,False
+MED-5123,2026-04-23T11:13:00,2026-04-23,web_intercept,/rewards/login,mobile,3,3,6,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,neutral,True
+MED-5124,2026-04-24T15:17:00,2026-04-24,email_survey,/order/checkout,mobile,3,3,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5125,2026-04-24T12:01:00,2026-04-24,post_purchase,/rewards/signup,mobile,1,3,5,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5126,2026-04-24T10:24:00,2026-04-24,post_purchase,/order/checkout,mobile,3,4,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,neutral,True
+MED-5127,2026-04-24T09:30:00,2026-04-24,web_intercept,/,desktop,4,7,1,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5128,2026-04-24T08:39:00,2026-04-24,email_survey,/catering,mobile,4,10,3,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5129,2026-04-24T18:01:00,2026-04-24,email_survey,/rewards/login,mobile,2,4,6,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,negative,False
+MED-5130,2026-04-24T11:36:00,2026-04-24,post_purchase,/order/checkout,mobile,3,2,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,neutral,True
+MED-5131,2026-04-24T19:03:00,2026-04-24,web_intercept,/order/checkout,desktop,3,3,6,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,True
+MED-5132,2026-04-24T14:57:00,2026-04-24,web_intercept,/rewards/login,mobile,4,5,5,"I know my password is correct because I just set it up, but the login just spins and nothing happens.",login,positive,True
+MED-5133,2026-04-24T22:04:00,2026-04-24,post_purchase,/order/checkout,desktop,2,1,5,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,True
+MED-5134,2026-04-24T17:38:00,2026-04-24,email_survey,/order/checkout,mobile,3,2,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,True
+MED-5135,2026-04-24T22:23:00,2026-04-24,post_purchase,/order/checkout,mobile,1,3,6,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5136,2026-04-24T08:28:00,2026-04-24,email_survey,/order/build-your-own,desktop,2,5,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5137,2026-04-24T14:30:00,2026-04-24,email_survey,/rewards/signup,desktop,1,4,7,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,True
+MED-5138,2026-04-24T13:24:00,2026-04-24,email_survey,/order/checkout,desktop,2,1,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5139,2026-04-24T11:26:00,2026-04-24,email_survey,/blog,mobile,5,10,3,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5140,2026-04-25T15:18:00,2026-04-25,email_survey,/order/checkout,mobile,1,2,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,False
+MED-5141,2026-04-25T17:32:00,2026-04-25,app_feedback,/rewards/login,mobile,4,3,4,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,positive,True
+MED-5142,2026-04-25T10:10:00,2026-04-25,email_survey,/catering,mobile,4,9,1,Would love to see nutritional info on the menu pages.,browse,positive,False
+MED-5143,2026-04-25T17:46:00,2026-04-25,web_intercept,/blog,mobile,3,8,3,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,True
+MED-5144,2026-04-25T15:21:00,2026-04-25,email_survey,/order/checkout,desktop,1,1,5,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,True
+MED-5145,2026-04-25T10:25:00,2026-04-25,app_feedback,/rewards/signup,desktop,3,2,5,I want to join the rewards program but the email field rejects my address. Please fix this.,signup,neutral,True
+MED-5146,2026-04-25T20:12:00,2026-04-25,email_survey,/order/checkout,mobile,1,2,6,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5147,2026-04-25T20:08:00,2026-04-25,web_intercept,/rewards/login,mobile,3,2,6,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,neutral,True
+MED-5148,2026-04-25T21:57:00,2026-04-25,email_survey,/order/checkout,mobile,1,2,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5149,2026-04-25T17:57:00,2026-04-25,post_purchase,/recipes,desktop,5,6,2,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5150,2026-04-25T12:56:00,2026-04-25,email_survey,/order/checkout,desktop,2,0,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5151,2026-04-25T14:33:00,2026-04-25,email_survey,/,desktop,4,6,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5152,2026-04-26T13:32:00,2026-04-26,web_intercept,/order/checkout,desktop,3,1,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,neutral,True
+MED-5153,2026-04-26T19:34:00,2026-04-26,web_intercept,/menu,mobile,5,9,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5154,2026-04-26T09:56:00,2026-04-26,post_purchase,/menu,desktop,3,10,1,"Catering quote form worked great, got a response within an hour.",browse,neutral,True
+MED-5155,2026-04-26T11:31:00,2026-04-26,web_intercept,/rewards/signup,mobile,3,4,7,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,neutral,True
+MED-5156,2026-04-26T22:15:00,2026-04-26,post_purchase,/order/build-your-own,mobile,2,2,5,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,negative,False
+MED-5157,2026-04-26T11:11:00,2026-04-26,email_survey,/locations,mobile,3,8,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5158,2026-04-26T13:01:00,2026-04-26,web_intercept,/rewards/signup,desktop,3,1,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,neutral,False
+MED-5159,2026-04-26T21:37:00,2026-04-26,web_intercept,/rewards/signup,mobile,3,2,6,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,True
+MED-5160,2026-04-26T18:38:00,2026-04-26,web_intercept,/,mobile,3,6,3,Love the menu selection. The spicy mango is incredible.,browse,neutral,True
+MED-5161,2026-04-26T11:22:00,2026-04-26,web_intercept,/recipes,desktop,5,10,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5162,2026-04-26T20:51:00,2026-04-26,web_intercept,/rewards/login,mobile,2,5,6,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,negative,False
+MED-5163,2026-04-26T18:35:00,2026-04-26,email_survey,/rewards/signup,mobile,3,2,7,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,neutral,True
+MED-5164,2026-04-26T12:54:00,2026-04-26,email_survey,/order/checkout,mobile,3,2,6,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5165,2026-04-26T18:37:00,2026-04-26,web_intercept,/order/checkout,desktop,2,0,6,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,True
+MED-5166,2026-04-26T15:38:00,2026-04-26,post_purchase,/rewards/signup,mobile,2,2,6,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5167,2026-04-26T08:20:00,2026-04-26,email_survey,/order/checkout,mobile,3,4,5,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5168,2026-04-26T09:06:00,2026-04-26,web_intercept,/order/checkout,desktop,2,2,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,True
+MED-5169,2026-04-26T21:59:00,2026-04-26,email_survey,/order/checkout,mobile,3,0,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,True
+MED-5170,2026-04-26T09:12:00,2026-04-26,web_intercept,/locations,mobile,3,6,2,Would love to see nutritional info on the menu pages.,browse,neutral,True
+MED-5171,2026-04-26T12:56:00,2026-04-26,app_feedback,/rewards/login,mobile,4,3,6,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,positive,True
+MED-5172,2026-04-26T22:06:00,2026-04-26,web_intercept,/rewards/login,desktop,4,2,7,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,positive,False
+MED-5173,2026-04-26T14:20:00,2026-04-26,email_survey,/order/checkout,mobile,1,3,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5174,2026-04-26T10:31:00,2026-04-26,web_intercept,/,mobile,4,8,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,False
+MED-5175,2026-04-26T08:00:00,2026-04-26,email_survey,/order/build-your-own,desktop,2,2,6,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,negative,False
+MED-5176,2026-04-27T16:40:00,2026-04-27,post_purchase,/order/checkout,mobile,3,2,7,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,neutral,True
+MED-5177,2026-04-27T08:04:00,2026-04-27,email_survey,/,desktop,3,6,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,True
+MED-5178,2026-04-27T18:22:00,2026-04-27,email_survey,/order/checkout,desktop,2,1,7,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5179,2026-04-27T10:22:00,2026-04-27,web_intercept,/locations,desktop,4,6,1,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5180,2026-04-27T08:25:00,2026-04-27,email_survey,/blog,mobile,5,10,1,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5181,2026-04-27T13:54:00,2026-04-27,post_purchase,/order/checkout,desktop,2,3,5,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5182,2026-04-27T17:59:00,2026-04-27,email_survey,/order/checkout,desktop,2,0,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5183,2026-04-27T10:23:00,2026-04-27,email_survey,/,desktop,5,10,3,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5184,2026-04-28T18:35:00,2026-04-28,web_intercept,/locations,desktop,5,9,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5185,2026-04-28T12:45:00,2026-04-28,post_purchase,/order/build-your-own,mobile,2,3,6,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,negative,False
+MED-5186,2026-04-28T09:08:00,2026-04-28,app_feedback,/order/build-your-own,mobile,4,5,5,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,positive,True
+MED-5187,2026-04-28T08:06:00,2026-04-28,email_survey,/rewards/signup,mobile,1,2,6,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5188,2026-04-28T14:01:00,2026-04-28,email_survey,/recipes,desktop,5,10,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5189,2026-04-28T16:20:00,2026-04-28,web_intercept,/rewards/signup,mobile,1,1,7,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,True
+MED-5190,2026-04-28T19:11:00,2026-04-28,web_intercept,/,desktop,3,9,1,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5191,2026-04-28T21:15:00,2026-04-28,email_survey,/recipes,mobile,3,9,2,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5192,2026-04-28T22:56:00,2026-04-28,post_purchase,/catering,desktop,5,8,2,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,False
+MED-5193,2026-04-28T21:50:00,2026-04-28,email_survey,/order/checkout,desktop,3,0,7,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,True
+MED-5194,2026-04-28T11:45:00,2026-04-28,email_survey,/order/checkout,mobile,1,4,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5195,2026-04-28T09:54:00,2026-04-28,post_purchase,/locations,mobile,3,10,2,Love the menu selection. The spicy mango is incredible.,browse,neutral,True
+MED-5196,2026-04-28T21:15:00,2026-04-28,email_survey,/order/build-your-own,desktop,3,3,6,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5197,2026-04-29T10:20:00,2026-04-29,web_intercept,/order/checkout,desktop,1,0,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5198,2026-04-29T11:15:00,2026-04-29,web_intercept,/rewards/login,mobile,2,4,4,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,True
+MED-5199,2026-04-29T15:55:00,2026-04-29,post_purchase,/order/build-your-own,desktop,3,3,5,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,neutral,True
+MED-5200,2026-04-29T11:49:00,2026-04-29,email_survey,/order/build-your-own,desktop,3,2,4,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5201,2026-04-29T19:24:00,2026-04-29,app_feedback,/rewards/signup,desktop,3,3,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,False
+MED-5202,2026-04-29T13:00:00,2026-04-29,post_purchase,/order/checkout,mobile,2,3,5,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,True
+MED-5203,2026-04-29T14:40:00,2026-04-29,email_survey,/order/build-your-own,desktop,3,5,4,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,neutral,True
+MED-5204,2026-04-29T13:30:00,2026-04-29,post_purchase,/order/build-your-own,desktop,3,3,6,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5205,2026-04-29T21:15:00,2026-04-29,app_feedback,/order/checkout,desktop,3,4,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,neutral,True
+MED-5206,2026-04-29T12:39:00,2026-04-29,web_intercept,/menu,desktop,3,6,2,Love the menu selection. The spicy mango is incredible.,browse,neutral,True
+MED-5207,2026-04-29T21:08:00,2026-04-29,email_survey,/order/checkout,mobile,2,1,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5208,2026-04-29T08:33:00,2026-04-29,post_purchase,/menu,mobile,4,7,1,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5209,2026-04-29T13:52:00,2026-04-29,email_survey,/,desktop,5,6,1,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5210,2026-04-29T21:36:00,2026-04-29,web_intercept,/order/checkout,mobile,1,4,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5211,2026-04-29T19:02:00,2026-04-29,post_purchase,/order/checkout,mobile,3,1,5,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5212,2026-04-29T12:06:00,2026-04-29,email_survey,/order/checkout,mobile,2,3,5,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5213,2026-04-29T16:56:00,2026-04-29,post_purchase,/rewards/signup,mobile,1,2,6,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,True
+MED-5214,2026-04-29T18:58:00,2026-04-29,app_feedback,/rewards/signup,mobile,3,4,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,neutral,True
+MED-5215,2026-04-29T14:55:00,2026-04-29,email_survey,/menu,mobile,4,10,1,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5216,2026-04-29T10:46:00,2026-04-29,email_survey,/order/checkout,desktop,2,0,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5217,2026-04-30T18:12:00,2026-04-30,email_survey,/order/build-your-own,mobile,4,2,4,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,True
+MED-5218,2026-04-30T14:55:00,2026-04-30,email_survey,/,desktop,5,10,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,False
+MED-5219,2026-04-30T18:54:00,2026-04-30,web_intercept,/order/build-your-own,mobile,3,5,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,neutral,True
+MED-5220,2026-04-30T14:54:00,2026-04-30,web_intercept,/order/checkout,mobile,3,3,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,False
+MED-5221,2026-04-30T16:55:00,2026-04-30,email_survey,/order/checkout,desktop,2,4,5,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5222,2026-04-30T21:51:00,2026-04-30,app_feedback,/menu,desktop,4,8,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,False
+MED-5223,2026-04-30T20:11:00,2026-04-30,email_survey,/rewards/signup,desktop,3,2,6,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,neutral,True
+MED-5224,2026-04-30T16:45:00,2026-04-30,web_intercept,/order/build-your-own,desktop,4,5,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,True
+MED-5225,2026-04-30T16:48:00,2026-04-30,web_intercept,/rewards/login,mobile,4,3,6,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,positive,True
+MED-5226,2026-04-30T17:55:00,2026-04-30,web_intercept,/menu,mobile,5,7,3,Would love to see nutritional info on the menu pages.,browse,positive,False
+MED-5227,2026-04-30T09:26:00,2026-04-30,app_feedback,/menu,desktop,4,10,3,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5228,2026-04-30T13:12:00,2026-04-30,web_intercept,/menu,mobile,3,9,2,Would love to see nutritional info on the menu pages.,browse,neutral,True
+MED-5229,2026-04-30T16:11:00,2026-04-30,email_survey,/order/checkout,desktop,1,0,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,True
+MED-5230,2026-04-30T16:48:00,2026-04-30,web_intercept,/rewards/signup,mobile,1,4,5,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,False
+MED-5231,2026-04-30T14:12:00,2026-04-30,post_purchase,/blog,mobile,5,10,3,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5232,2026-04-30T13:19:00,2026-04-30,email_survey,/rewards/signup,desktop,1,2,7,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5233,2026-04-30T20:33:00,2026-04-30,post_purchase,/rewards/signup,desktop,1,3,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5234,2026-04-30T18:43:00,2026-04-30,app_feedback,/,desktop,3,6,2,"Great margaritas, website could use some work though.",browse,neutral,True
+MED-5235,2026-04-30T22:50:00,2026-04-30,app_feedback,/order/build-your-own,desktop,3,5,6,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,neutral,True
+MED-5236,2026-04-30T17:13:00,2026-04-30,web_intercept,/rewards/login,mobile,2,3,5,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,negative,True
+MED-5237,2026-04-30T15:09:00,2026-04-30,post_purchase,/recipes,mobile,4,6,2,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5238,2026-04-30T15:40:00,2026-04-30,email_survey,/,desktop,4,10,2,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5239,2026-04-30T16:15:00,2026-04-30,web_intercept,/order/checkout,desktop,2,4,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5240,2026-04-30T21:00:00,2026-04-30,email_survey,/rewards/signup,mobile,3,1,7,I want to join the rewards program but the email field rejects my address. Please fix this.,signup,neutral,False
+MED-5241,2026-04-30T09:05:00,2026-04-30,post_purchase,/catering,desktop,4,10,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5242,2026-05-01T13:24:00,2026-05-01,email_survey,/rewards/login,desktop,3,5,6,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,neutral,True
+MED-5243,2026-05-01T14:36:00,2026-05-01,email_survey,/recipes,mobile,3,6,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,False
+MED-5244,2026-05-01T08:34:00,2026-05-01,email_survey,/order/checkout,mobile,3,4,5,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,neutral,True
+MED-5245,2026-05-01T13:30:00,2026-05-01,email_survey,/rewards/login,desktop,4,2,6,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,positive,True
+MED-5246,2026-05-01T18:23:00,2026-05-01,web_intercept,/recipes,mobile,3,8,1,"Great margaritas, website could use some work though.",browse,neutral,True
+MED-5247,2026-05-01T08:58:00,2026-05-01,web_intercept,/blog,desktop,5,10,1,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5248,2026-05-01T18:34:00,2026-05-01,email_survey,/order/checkout,mobile,1,1,5,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,True
+MED-5249,2026-05-01T21:06:00,2026-05-01,post_purchase,/order/build-your-own,desktop,4,3,6,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,positive,True
+MED-5250,2026-05-01T13:43:00,2026-05-01,email_survey,/menu,mobile,4,7,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5251,2026-05-01T19:27:00,2026-05-01,post_purchase,/recipes,desktop,4,7,3,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5252,2026-05-01T13:19:00,2026-05-01,post_purchase,/,mobile,5,7,2,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5253,2026-05-01T14:10:00,2026-05-01,web_intercept,/order/build-your-own,desktop,4,5,5,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,positive,True
+MED-5254,2026-05-01T13:51:00,2026-05-01,email_survey,/,mobile,3,9,1,Really enjoy the recipes section. Made the classic lime at home!,browse,neutral,False
+MED-5255,2026-05-01T08:06:00,2026-05-01,email_survey,/order/checkout,mobile,3,3,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,neutral,True
+MED-5256,2026-05-01T18:53:00,2026-05-01,web_intercept,/menu,mobile,4,9,2,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5257,2026-05-01T21:11:00,2026-05-01,web_intercept,/,desktop,4,6,3,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5258,2026-05-01T18:23:00,2026-05-01,app_feedback,/order/build-your-own,desktop,3,5,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5259,2026-05-01T18:52:00,2026-05-01,email_survey,/order/checkout,desktop,1,1,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5260,2026-05-01T20:48:00,2026-05-01,web_intercept,/locations,desktop,5,10,1,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5261,2026-05-01T16:37:00,2026-05-01,web_intercept,/menu,desktop,4,7,1,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5262,2026-05-01T12:11:00,2026-05-01,post_purchase,/locations,mobile,3,9,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,False
+MED-5263,2026-05-01T22:24:00,2026-05-01,email_survey,/locations,desktop,5,9,3,Your website loads really fast on desktop. Nice job.,browse,positive,False
+MED-5264,2026-05-02T08:42:00,2026-05-02,web_intercept,/order/checkout,mobile,2,3,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5265,2026-05-02T14:30:00,2026-05-02,web_intercept,/menu,desktop,4,10,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5266,2026-05-02T22:40:00,2026-05-02,email_survey,/order/checkout,mobile,1,2,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,True
+MED-5267,2026-05-02T09:32:00,2026-05-02,email_survey,/rewards/login,mobile,2,2,6,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,negative,False
+MED-5268,2026-05-02T08:22:00,2026-05-02,email_survey,/catering,desktop,5,8,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5269,2026-05-02T08:43:00,2026-05-02,web_intercept,/,desktop,5,8,2,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5270,2026-05-02T21:34:00,2026-05-02,app_feedback,/order/checkout,mobile,3,2,5,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,neutral,True
+MED-5271,2026-05-02T12:46:00,2026-05-02,email_survey,/order/checkout,desktop,2,1,5,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5272,2026-05-02T20:05:00,2026-05-02,post_purchase,/catering,mobile,3,9,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,True
+MED-5273,2026-05-02T20:16:00,2026-05-02,web_intercept,/order/build-your-own,desktop,2,4,4,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,negative,False
+MED-5274,2026-05-02T17:38:00,2026-05-02,post_purchase,/order/checkout,desktop,1,4,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5275,2026-05-02T08:44:00,2026-05-02,post_purchase,/blog,mobile,3,9,1,Would love to see nutritional info on the menu pages.,browse,neutral,True
+MED-5276,2026-05-02T17:52:00,2026-05-02,post_purchase,/order/checkout,mobile,1,3,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,True
+MED-5277,2026-05-02T16:18:00,2026-05-02,post_purchase,/order/build-your-own,mobile,3,3,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5278,2026-05-02T15:31:00,2026-05-02,email_survey,/order/build-your-own,mobile,4,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,False
+MED-5279,2026-05-02T08:47:00,2026-05-02,email_survey,/order/build-your-own,mobile,2,5,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,negative,False
+MED-5280,2026-05-02T11:42:00,2026-05-02,email_survey,/rewards/signup,mobile,2,3,7,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5281,2026-05-02T20:31:00,2026-05-02,web_intercept,/order/checkout,mobile,1,4,6,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5282,2026-05-02T22:00:00,2026-05-02,web_intercept,/rewards/signup,mobile,2,4,5,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5283,2026-05-02T21:34:00,2026-05-02,web_intercept,/recipes,mobile,5,10,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5284,2026-05-02T18:20:00,2026-05-02,web_intercept,/rewards/login,desktop,3,2,4,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,neutral,True
+MED-5285,2026-05-02T13:27:00,2026-05-02,post_purchase,/menu,mobile,5,9,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5286,2026-05-03T19:17:00,2026-05-03,email_survey,/order/checkout,desktop,2,1,7,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5287,2026-05-03T10:50:00,2026-05-03,post_purchase,/menu,desktop,4,10,1,Love the menu selection. The spicy mango is incredible.,browse,positive,False
+MED-5288,2026-05-03T20:47:00,2026-05-03,email_survey,/recipes,mobile,4,10,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5289,2026-05-03T17:42:00,2026-05-03,email_survey,/rewards/signup,desktop,3,4,5,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,neutral,True
+MED-5290,2026-05-03T14:35:00,2026-05-03,email_survey,/rewards/signup,desktop,1,3,7,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,True
+MED-5291,2026-05-03T09:10:00,2026-05-03,email_survey,/rewards/login,mobile,4,5,6,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,positive,True
+MED-5292,2026-05-03T19:07:00,2026-05-03,web_intercept,/order/checkout,mobile,2,4,5,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,True
+MED-5293,2026-05-03T18:36:00,2026-05-03,post_purchase,/rewards/signup,mobile,2,2,5,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5294,2026-05-03T21:19:00,2026-05-03,web_intercept,/order/checkout,desktop,3,1,6,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,True
+MED-5295,2026-05-03T10:28:00,2026-05-03,app_feedback,/order/checkout,desktop,1,2,7,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,False
+MED-5296,2026-05-03T20:56:00,2026-05-03,web_intercept,/rewards/signup,desktop,1,1,7,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,False
+MED-5297,2026-05-03T10:04:00,2026-05-03,post_purchase,/locations,mobile,3,6,2,Your website loads really fast on desktop. Nice job.,browse,neutral,True
+MED-5298,2026-05-03T09:35:00,2026-05-03,email_survey,/rewards/login,mobile,2,3,7,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,negative,False
+MED-5299,2026-05-03T19:21:00,2026-05-03,app_feedback,/rewards/login,mobile,2,5,7,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,negative,False
+MED-5300,2026-05-03T08:03:00,2026-05-03,post_purchase,/locations,mobile,3,10,2,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5301,2026-05-03T19:26:00,2026-05-03,web_intercept,/rewards/signup,mobile,1,1,6,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5302,2026-05-03T19:57:00,2026-05-03,web_intercept,/catering,desktop,5,8,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5303,2026-05-03T15:07:00,2026-05-03,email_survey,/menu,desktop,4,8,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5304,2026-05-03T09:14:00,2026-05-03,email_survey,/order/checkout,desktop,2,4,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,False
+MED-5305,2026-05-03T11:19:00,2026-05-03,app_feedback,/order/checkout,mobile,2,3,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5306,2026-05-03T20:54:00,2026-05-03,web_intercept,/rewards/signup,mobile,1,4,5,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,True
+MED-5307,2026-05-03T15:14:00,2026-05-03,app_feedback,/catering,mobile,3,8,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,False
+MED-5308,2026-05-03T18:14:00,2026-05-03,web_intercept,/rewards/signup,mobile,2,1,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5309,2026-05-03T22:50:00,2026-05-03,email_survey,/rewards/signup,mobile,2,3,6,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5310,2026-05-04T20:20:00,2026-05-04,web_intercept,/recipes,mobile,3,10,2,"Catering quote form worked great, got a response within an hour.",browse,neutral,True
+MED-5311,2026-05-04T10:03:00,2026-05-04,web_intercept,/order/checkout,mobile,1,1,7,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5312,2026-05-04T09:17:00,2026-05-04,web_intercept,/locations,mobile,4,8,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5313,2026-05-04T08:42:00,2026-05-04,email_survey,/rewards/signup,desktop,1,1,5,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5314,2026-05-04T18:46:00,2026-05-04,web_intercept,/order/build-your-own,mobile,3,2,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5315,2026-05-04T16:41:00,2026-05-04,post_purchase,/rewards/login,mobile,2,4,6,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,negative,False
+MED-5316,2026-05-04T15:30:00,2026-05-04,web_intercept,/rewards/login,mobile,3,2,6,"I know my password is correct because I just set it up, but the login just spins and nothing happens.",login,neutral,True
+MED-5317,2026-05-04T12:34:00,2026-05-04,post_purchase,/order/build-your-own,desktop,2,3,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,False
+MED-5318,2026-05-04T18:10:00,2026-05-04,web_intercept,/order/build-your-own,mobile,4,3,6,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,positive,True
+MED-5319,2026-05-04T09:16:00,2026-05-04,post_purchase,/rewards/signup,mobile,1,2,7,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5320,2026-05-04T19:31:00,2026-05-04,post_purchase,/rewards/signup,mobile,2,3,7,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5321,2026-05-04T08:38:00,2026-05-04,web_intercept,/menu,mobile,5,7,3,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5322,2026-05-04T18:51:00,2026-05-04,web_intercept,/menu,mobile,5,10,1,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5323,2026-05-04T20:45:00,2026-05-04,email_survey,/rewards/login,mobile,2,4,7,"I know my password is correct because I just set it up, but the login just spins and nothing happens.",login,negative,False
+MED-5324,2026-05-04T16:17:00,2026-05-04,web_intercept,/menu,desktop,5,8,2,Would love to see nutritional info on the menu pages.,browse,positive,False
+MED-5325,2026-05-04T11:05:00,2026-05-04,web_intercept,/recipes,desktop,4,8,1,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5326,2026-05-04T22:06:00,2026-05-04,web_intercept,/order/checkout,mobile,3,2,6,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,True
+MED-5327,2026-05-04T15:14:00,2026-05-04,web_intercept,/order/checkout,desktop,3,4,6,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,neutral,True
+MED-5328,2026-05-04T11:40:00,2026-05-04,post_purchase,/locations,mobile,4,8,3,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5329,2026-05-04T14:02:00,2026-05-04,post_purchase,/rewards/signup,mobile,2,1,6,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5330,2026-05-04T17:12:00,2026-05-04,web_intercept,/order/build-your-own,mobile,3,4,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,neutral,True
+MED-5331,2026-05-04T17:08:00,2026-05-04,web_intercept,/rewards/signup,mobile,2,3,5,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5332,2026-05-05T08:30:00,2026-05-05,web_intercept,/,mobile,4,7,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,False
+MED-5333,2026-05-05T20:28:00,2026-05-05,post_purchase,/order/checkout,desktop,2,4,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5334,2026-05-05T14:44:00,2026-05-05,app_feedback,/rewards/signup,mobile,3,4,7,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,True
+MED-5335,2026-05-05T15:00:00,2026-05-05,post_purchase,/order/checkout,mobile,3,3,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,False
+MED-5336,2026-05-05T20:58:00,2026-05-05,web_intercept,/order/build-your-own,mobile,3,4,4,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,neutral,False
+MED-5337,2026-05-05T22:51:00,2026-05-05,email_survey,/rewards/signup,desktop,1,4,6,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,True
+MED-5338,2026-05-05T20:16:00,2026-05-05,web_intercept,/rewards/signup,desktop,3,3,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,neutral,False
+MED-5339,2026-05-05T16:21:00,2026-05-05,web_intercept,/order/checkout,desktop,1,0,5,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,False
+MED-5340,2026-05-05T14:33:00,2026-05-05,post_purchase,/recipes,mobile,3,10,1,Your website loads really fast on desktop. Nice job.,browse,neutral,False
+MED-5341,2026-05-05T18:42:00,2026-05-05,web_intercept,/menu,mobile,5,10,3,"Great margaritas, website could use some work though.",browse,positive,False
+MED-5342,2026-05-05T12:10:00,2026-05-05,web_intercept,/order/checkout,mobile,1,4,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,False
+MED-5343,2026-05-05T20:21:00,2026-05-05,web_intercept,/catering,mobile,3,7,1,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5344,2026-05-05T11:56:00,2026-05-05,email_survey,/locations,desktop,4,9,2,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5345,2026-05-05T22:09:00,2026-05-05,web_intercept,/order/checkout,mobile,2,3,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5346,2026-05-05T08:37:00,2026-05-05,app_feedback,/catering,mobile,3,10,2,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5347,2026-05-05T15:37:00,2026-05-05,email_survey,/order/checkout,desktop,2,2,5,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5348,2026-05-06T10:08:00,2026-05-06,app_feedback,/blog,mobile,3,7,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5349,2026-05-06T18:33:00,2026-05-06,web_intercept,/recipes,desktop,4,7,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5350,2026-05-06T08:01:00,2026-05-06,post_purchase,/rewards/login,desktop,3,3,7,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,neutral,False
+MED-5351,2026-05-06T19:19:00,2026-05-06,post_purchase,/catering,desktop,4,6,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5352,2026-05-06T22:16:00,2026-05-06,email_survey,/rewards/login,mobile,2,5,4,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,False
+MED-5353,2026-05-06T17:47:00,2026-05-06,web_intercept,/rewards/signup,mobile,2,4,7,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,False
+MED-5354,2026-05-06T20:06:00,2026-05-06,web_intercept,/,mobile,3,7,1,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,True
+MED-5355,2026-05-06T22:04:00,2026-05-06,web_intercept,/rewards/signup,desktop,3,3,7,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,neutral,True
+MED-5356,2026-05-06T21:02:00,2026-05-06,app_feedback,/order/build-your-own,desktop,2,4,5,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,negative,True
+MED-5357,2026-05-06T16:25:00,2026-05-06,email_survey,/recipes,mobile,3,6,2,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5358,2026-05-06T21:02:00,2026-05-06,web_intercept,/catering,mobile,4,6,2,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5359,2026-05-06T14:53:00,2026-05-06,post_purchase,/rewards/signup,mobile,3,4,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,True
+MED-5360,2026-05-06T09:05:00,2026-05-06,web_intercept,/rewards/login,mobile,4,4,6,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,positive,True
+MED-5361,2026-05-06T18:05:00,2026-05-06,email_survey,/blog,desktop,4,9,1,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5362,2026-05-06T22:37:00,2026-05-06,post_purchase,/catering,desktop,5,6,1,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5363,2026-05-06T12:41:00,2026-05-06,post_purchase,/order/checkout,mobile,2,1,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5364,2026-05-06T20:18:00,2026-05-06,post_purchase,/locations,mobile,4,9,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5365,2026-05-06T14:20:00,2026-05-06,web_intercept,/rewards/signup,mobile,1,2,7,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,True
+MED-5366,2026-05-06T10:00:00,2026-05-06,app_feedback,/locations,mobile,3,9,1,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5367,2026-05-06T19:00:00,2026-05-06,web_intercept,/order/checkout,mobile,2,0,5,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,True
+MED-5368,2026-05-06T16:44:00,2026-05-06,web_intercept,/order/checkout,mobile,3,3,5,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,neutral,True
+MED-5369,2026-05-06T11:15:00,2026-05-06,email_survey,/locations,mobile,5,8,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5370,2026-05-07T10:25:00,2026-05-07,email_survey,/locations,mobile,4,8,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5371,2026-05-07T11:44:00,2026-05-07,app_feedback,/blog,desktop,3,10,3,"Catering quote form worked great, got a response within an hour.",browse,neutral,True
+MED-5372,2026-05-07T09:17:00,2026-05-07,web_intercept,/,desktop,3,9,3,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,False
+MED-5373,2026-05-07T15:09:00,2026-05-07,email_survey,/order/checkout,desktop,3,1,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,neutral,False
+MED-5374,2026-05-07T17:30:00,2026-05-07,post_purchase,/order/checkout,mobile,2,1,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5375,2026-05-07T10:16:00,2026-05-07,email_survey,/locations,mobile,4,8,2,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5376,2026-05-07T14:29:00,2026-05-07,web_intercept,/rewards/signup,mobile,2,1,5,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5377,2026-05-07T17:56:00,2026-05-07,web_intercept,/order/checkout,mobile,3,1,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,False
+MED-5378,2026-05-07T15:20:00,2026-05-07,web_intercept,/locations,mobile,3,6,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5379,2026-05-07T13:35:00,2026-05-07,post_purchase,/locations,desktop,3,8,2,"Great margaritas, website could use some work though.",browse,neutral,False
+MED-5380,2026-05-07T14:28:00,2026-05-07,web_intercept,/order/checkout,mobile,3,2,7,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,neutral,True
+MED-5381,2026-05-07T15:17:00,2026-05-07,app_feedback,/order/checkout,desktop,3,2,6,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,neutral,True
+MED-5382,2026-05-07T14:15:00,2026-05-07,app_feedback,/rewards/signup,mobile,3,2,7,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,True
+MED-5383,2026-05-08T08:06:00,2026-05-08,web_intercept,/order/build-your-own,mobile,4,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,True
+MED-5384,2026-05-08T11:00:00,2026-05-08,web_intercept,/order/checkout,mobile,3,3,5,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,True
+MED-5385,2026-05-08T17:31:00,2026-05-08,web_intercept,/,mobile,3,9,3,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5386,2026-05-08T11:16:00,2026-05-08,web_intercept,/menu,mobile,4,8,1,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5387,2026-05-08T18:41:00,2026-05-08,email_survey,/rewards/signup,mobile,2,4,7,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5388,2026-05-08T12:16:00,2026-05-08,app_feedback,/locations,desktop,3,8,1,"Catering quote form worked great, got a response within an hour.",browse,neutral,True
+MED-5389,2026-05-08T17:01:00,2026-05-08,post_purchase,/rewards/signup,desktop,2,2,5,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5390,2026-05-08T11:12:00,2026-05-08,web_intercept,/order/checkout,desktop,3,4,7,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,neutral,True
+MED-5391,2026-05-08T10:12:00,2026-05-08,email_survey,/order/checkout,mobile,2,4,5,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5392,2026-05-08T10:17:00,2026-05-08,email_survey,/rewards/login,mobile,4,4,5,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,positive,True
+MED-5393,2026-05-08T15:26:00,2026-05-08,web_intercept,/menu,mobile,5,10,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5394,2026-05-08T21:45:00,2026-05-08,web_intercept,/order/checkout,desktop,2,1,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,negative,False
+MED-5395,2026-05-08T19:23:00,2026-05-08,web_intercept,/rewards/login,mobile,3,2,6,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,neutral,True
+MED-5396,2026-05-08T10:59:00,2026-05-08,app_feedback,/order/build-your-own,desktop,3,5,6,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,neutral,True
+MED-5397,2026-05-08T11:59:00,2026-05-08,web_intercept,/order/checkout,desktop,3,2,7,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,True
+MED-5398,2026-05-08T20:45:00,2026-05-08,web_intercept,/order/checkout,mobile,1,4,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5399,2026-05-08T12:55:00,2026-05-08,email_survey,/order/checkout,desktop,2,0,7,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,negative,False
+MED-5400,2026-05-08T13:12:00,2026-05-08,web_intercept,/order/build-your-own,mobile,2,4,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,True
+MED-5401,2026-05-08T20:44:00,2026-05-08,web_intercept,/,desktop,5,7,1,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5402,2026-05-08T20:11:00,2026-05-08,email_survey,/order/build-your-own,mobile,3,3,4,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5403,2026-05-08T13:20:00,2026-05-08,web_intercept,/order/checkout,mobile,1,2,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5404,2026-05-08T15:00:00,2026-05-08,web_intercept,/order/checkout,mobile,1,1,5,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5405,2026-05-09T09:41:00,2026-05-09,app_feedback,/order/build-your-own,desktop,3,3,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5406,2026-05-09T13:20:00,2026-05-09,email_survey,/menu,mobile,4,10,3,Mobile site needs work. Some buttons are hard to tap.,browse,positive,True
+MED-5407,2026-05-09T15:59:00,2026-05-09,post_purchase,/locations,mobile,3,9,3,The party packs are an amazing deal. Ordered for my office happy hour.,browse,neutral,False
+MED-5408,2026-05-09T12:07:00,2026-05-09,email_survey,/blog,mobile,4,7,3,"Great margaritas, website could use some work though.",browse,positive,False
+MED-5409,2026-05-09T19:34:00,2026-05-09,web_intercept,/order/build-your-own,mobile,3,3,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5410,2026-05-09T14:28:00,2026-05-09,web_intercept,/order/checkout,desktop,3,1,7,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,neutral,True
+MED-5411,2026-05-09T12:51:00,2026-05-09,post_purchase,/rewards/login,desktop,2,3,5,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,negative,False
+MED-5412,2026-05-09T12:49:00,2026-05-09,web_intercept,/recipes,desktop,5,10,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5413,2026-05-09T19:50:00,2026-05-09,web_intercept,/recipes,mobile,5,9,1,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5414,2026-05-09T16:58:00,2026-05-09,post_purchase,/menu,mobile,4,9,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5415,2026-05-09T09:11:00,2026-05-09,email_survey,/order/build-your-own,desktop,4,5,4,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,positive,True
+MED-5416,2026-05-09T09:26:00,2026-05-09,web_intercept,/order/build-your-own,mobile,3,3,4,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,neutral,True
+MED-5417,2026-05-09T13:52:00,2026-05-09,post_purchase,/order/checkout,desktop,2,1,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5418,2026-05-09T19:33:00,2026-05-09,email_survey,/blog,mobile,5,8,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5419,2026-05-09T16:13:00,2026-05-09,post_purchase,/locations,desktop,3,8,3,Love the menu selection. The spicy mango is incredible.,browse,neutral,True
+MED-5420,2026-05-09T21:20:00,2026-05-09,post_purchase,/locations,mobile,3,9,3,Your website loads really fast on desktop. Nice job.,browse,neutral,True
+MED-5421,2026-05-09T17:18:00,2026-05-09,email_survey,/order/build-your-own,mobile,4,3,4,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,positive,False
+MED-5422,2026-05-09T20:58:00,2026-05-09,post_purchase,/order/build-your-own,desktop,3,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,False
+MED-5423,2026-05-09T19:17:00,2026-05-09,email_survey,/rewards/signup,mobile,3,1,7,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,neutral,True
+MED-5424,2026-05-09T14:59:00,2026-05-09,web_intercept,/rewards/login,desktop,2,3,6,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,negative,False
+MED-5425,2026-05-09T09:08:00,2026-05-09,web_intercept,/order/checkout,desktop,2,4,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5426,2026-05-09T21:10:00,2026-05-09,email_survey,/order/build-your-own,desktop,3,3,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,neutral,True
+MED-5427,2026-05-09T21:07:00,2026-05-09,email_survey,/order/checkout,mobile,2,0,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5428,2026-05-09T15:02:00,2026-05-09,app_feedback,/rewards/login,mobile,3,3,7,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,neutral,True
+MED-5429,2026-05-10T09:50:00,2026-05-10,web_intercept,/recipes,mobile,4,9,2,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5430,2026-05-10T09:36:00,2026-05-10,email_survey,/order/build-your-own,desktop,3,3,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,neutral,False
+MED-5431,2026-05-10T08:41:00,2026-05-10,web_intercept,/rewards/signup,desktop,2,3,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,negative,False
+MED-5432,2026-05-10T09:23:00,2026-05-10,web_intercept,/order/checkout,mobile,3,3,6,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,neutral,False
+MED-5433,2026-05-10T10:12:00,2026-05-10,post_purchase,/locations,desktop,5,8,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5434,2026-05-10T11:58:00,2026-05-10,email_survey,/order/build-your-own,mobile,3,3,6,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,neutral,True
+MED-5435,2026-05-10T14:33:00,2026-05-10,web_intercept,/locations,mobile,3,8,2,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5436,2026-05-10T10:08:00,2026-05-10,web_intercept,/order/checkout,mobile,3,0,6,"Page is so slow I thought my browser crashed. Then the address form reset. This is 2026, how is this still a problem?",checkout,neutral,False
+MED-5437,2026-05-10T09:59:00,2026-05-10,app_feedback,/order/build-your-own,mobile,4,2,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,True
+MED-5438,2026-05-10T18:47:00,2026-05-10,web_intercept,/order/build-your-own,desktop,2,5,4,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,negative,False
+MED-5439,2026-05-10T13:53:00,2026-05-10,email_survey,/rewards/login,mobile,2,4,7,Is the rewards login broken? I've tried 5 times and it silently fails every time.,login,negative,False
+MED-5440,2026-05-10T12:58:00,2026-05-10,web_intercept,/order/build-your-own,mobile,2,3,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5441,2026-05-10T16:44:00,2026-05-10,web_intercept,/menu,mobile,5,10,2,"Great margaritas, website could use some work though.",browse,positive,True
+MED-5442,2026-05-10T14:42:00,2026-05-10,email_survey,/rewards/login,mobile,2,4,4,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,False
+MED-5443,2026-05-10T22:28:00,2026-05-10,web_intercept,/rewards/login,mobile,4,4,7,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,positive,False
+MED-5444,2026-05-10T19:58:00,2026-05-10,post_purchase,/order/build-your-own,mobile,3,4,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,neutral,True
+MED-5445,2026-05-10T11:01:00,2026-05-10,post_purchase,/order/checkout,mobile,2,4,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5446,2026-05-10T11:35:00,2026-05-10,email_survey,/,mobile,3,9,3,Would love to see nutritional info on the menu pages.,browse,neutral,True
+MED-5447,2026-05-11T12:23:00,2026-05-11,email_survey,/menu,mobile,4,9,3,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5448,2026-05-11T15:10:00,2026-05-11,web_intercept,/order/checkout,desktop,1,1,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,True
+MED-5449,2026-05-11T09:22:00,2026-05-11,web_intercept,/order/checkout,mobile,3,3,6,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,neutral,True
+MED-5450,2026-05-11T12:14:00,2026-05-11,web_intercept,/order/checkout,mobile,1,2,5,Tried to order a party pack for Saturday. Checkout form wiped my address twice. Ended up ordering from a competitor.,checkout,negative,False
+MED-5451,2026-05-11T18:33:00,2026-05-11,email_survey,/rewards/login,mobile,4,4,6,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,positive,True
+MED-5452,2026-05-11T09:14:00,2026-05-11,email_survey,/order/checkout,desktop,2,1,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,False
+MED-5453,2026-05-11T13:25:00,2026-05-11,email_survey,/catering,mobile,5,10,1,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5454,2026-05-11T11:29:00,2026-05-11,post_purchase,/order/build-your-own,desktop,4,5,4,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,False
+MED-5455,2026-05-11T13:27:00,2026-05-11,web_intercept,/order/checkout,desktop,1,4,6,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,False
+MED-5456,2026-05-11T19:27:00,2026-05-11,app_feedback,/order/build-your-own,mobile,4,3,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,True
+MED-5457,2026-05-11T10:42:00,2026-05-11,web_intercept,/rewards/signup,mobile,1,3,6,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,negative,False
+MED-5458,2026-05-11T09:48:00,2026-05-11,web_intercept,/locations,mobile,5,9,1,"Catering quote form worked great, got a response within an hour.",browse,positive,False
+MED-5459,2026-05-11T17:58:00,2026-05-11,app_feedback,/recipes,mobile,4,10,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,False
+MED-5460,2026-05-11T17:59:00,2026-05-11,email_survey,/order/checkout,desktop,1,3,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5461,2026-05-11T14:22:00,2026-05-11,app_feedback,/blog,mobile,3,8,2,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,True
+MED-5462,2026-05-12T18:35:00,2026-05-12,web_intercept,/order/checkout,mobile,3,2,5,Love your margaritas but your checkout is broken. Fix the address form please!,checkout,neutral,True
+MED-5463,2026-05-12T18:30:00,2026-05-12,post_purchase,/order/checkout,desktop,1,0,7,The checkout error message flashes for half a second and then the form resets. I have no idea what I did wrong.,checkout,negative,False
+MED-5464,2026-05-12T22:49:00,2026-05-12,app_feedback,/order/checkout,mobile,1,3,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5465,2026-05-12T13:55:00,2026-05-12,web_intercept,/order/build-your-own,desktop,2,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5466,2026-05-12T22:40:00,2026-05-12,web_intercept,/rewards/login,mobile,2,3,6,"I know my password is correct because I just set it up, but the login just spins and nothing happens.",login,negative,False
+MED-5467,2026-05-12T16:41:00,2026-05-12,web_intercept,/rewards/login,mobile,3,2,6,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,neutral,False
+MED-5468,2026-05-12T15:17:00,2026-05-12,email_survey,/order/build-your-own,desktop,3,4,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,neutral,True
+MED-5469,2026-05-12T08:54:00,2026-05-12,email_survey,/locations,mobile,3,9,3,Mobile site needs work. Some buttons are hard to tap.,browse,neutral,False
+MED-5470,2026-05-12T11:05:00,2026-05-12,post_purchase,/rewards/login,mobile,2,4,6,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,False
+MED-5471,2026-05-12T21:42:00,2026-05-12,email_survey,/catering,desktop,4,8,2,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5472,2026-05-12T16:35:00,2026-05-12,web_intercept,/menu,mobile,4,8,3,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5473,2026-05-12T17:04:00,2026-05-12,app_feedback,/locations,desktop,4,8,3,The blog content is great! Learned a lot about tequila varieties.,browse,positive,False
+MED-5474,2026-05-12T20:16:00,2026-05-12,web_intercept,/order/build-your-own,mobile,2,4,5,I added tequila reposado and fresh lime but the price stayed at $0.00. Is this a bug or is it really free? (It wasn't free.),build,negative,False
+MED-5475,2026-05-12T10:27:00,2026-05-12,web_intercept,/order/build-your-own,desktop,4,2,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,True
+MED-5476,2026-05-12T20:21:00,2026-05-12,web_intercept,/rewards/signup,mobile,1,3,7,"The signup form won't accept my email address. No error message, just nothing happens when I click submit.",signup,negative,False
+MED-5477,2026-05-12T12:51:00,2026-05-12,email_survey,/order/checkout,mobile,2,0,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5478,2026-05-13T18:20:00,2026-05-13,post_purchase,/rewards/signup,desktop,3,1,6,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,neutral,True
+MED-5479,2026-05-13T15:51:00,2026-05-13,web_intercept,/rewards/login,mobile,4,3,4,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,positive,False
+MED-5480,2026-05-13T16:14:00,2026-05-13,email_survey,/order/build-your-own,desktop,3,2,6,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,neutral,True
+MED-5481,2026-05-13T18:46:00,2026-05-13,email_survey,/catering,mobile,3,9,3,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5482,2026-05-13T19:11:00,2026-05-13,post_purchase,/catering,mobile,3,7,2,"Catering quote form worked great, got a response within an hour.",browse,neutral,False
+MED-5483,2026-05-13T19:54:00,2026-05-13,web_intercept,/,desktop,4,9,2,The blog content is great! Learned a lot about tequila varieties.,browse,positive,True
+MED-5484,2026-05-13T13:12:00,2026-05-13,web_intercept,/locations,mobile,4,7,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5485,2026-05-13T14:15:00,2026-05-13,web_intercept,/rewards/signup,desktop,1,2,5,I tried to sign up with my Gmail address (lisa.m+rewards@gmail.com) and it said invalid email. That IS a valid email!,signup,negative,False
+MED-5486,2026-05-13T13:28:00,2026-05-13,web_intercept,/order/checkout,desktop,2,4,6,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5487,2026-05-13T18:33:00,2026-05-13,email_survey,/order/build-your-own,mobile,4,4,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,positive,True
+MED-5488,2026-05-13T11:54:00,2026-05-13,email_survey,/locations,mobile,4,10,2,Your website loads really fast on desktop. Nice job.,browse,positive,False
+MED-5489,2026-05-13T11:36:00,2026-05-13,web_intercept,/order/checkout,mobile,1,2,7,Why does the page jump around so much when I'm trying to enter my credit card? The layout kept shifting and I accidentally clicked the wrong button.,checkout,negative,False
+MED-5490,2026-05-13T21:59:00,2026-05-13,post_purchase,/rewards/login,mobile,3,2,7,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,neutral,False
+MED-5491,2026-05-14T17:57:00,2026-05-14,web_intercept,/rewards/login,mobile,3,2,7,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,neutral,False
+MED-5492,2026-05-14T14:14:00,2026-05-14,app_feedback,/rewards/signup,mobile,1,4,6,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5493,2026-05-14T19:38:00,2026-05-14,post_purchase,/rewards/signup,mobile,3,1,5,Wanted the 10% off first order through rewards but can't even sign up. Email validation is too strict.,signup,neutral,True
+MED-5494,2026-05-14T18:29:00,2026-05-14,web_intercept,/rewards/signup,desktop,2,3,7,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5495,2026-05-14T22:54:00,2026-05-14,post_purchase,/,desktop,3,6,2,The blog content is great! Learned a lot about tequila varieties.,browse,neutral,True
+MED-5496,2026-05-14T13:24:00,2026-05-14,web_intercept,/,mobile,5,10,1,"Catering quote form worked great, got a response within an hour.",browse,positive,True
+MED-5497,2026-05-14T20:11:00,2026-05-14,web_intercept,/order/checkout,mobile,2,4,6,Spent 10 minutes trying to complete an order. Address keeps clearing. I'm done.,checkout,negative,False
+MED-5498,2026-05-14T21:32:00,2026-05-14,web_intercept,/recipes,desktop,5,9,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5499,2026-05-14T14:57:00,2026-05-14,post_purchase,/order/checkout,mobile,2,1,6,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5500,2026-05-14T15:44:00,2026-05-14,email_survey,/rewards/signup,mobile,2,2,5,Tried three different email addresses to sign up for rewards. None of them worked. What email format do you want??,signup,negative,False
+MED-5501,2026-05-14T15:45:00,2026-05-14,email_survey,/rewards/login,mobile,2,4,5,Tried logging into my rewards account to check my points. The page just refreshes with no feedback.,login,negative,False
+MED-5502,2026-05-14T08:18:00,2026-05-14,email_survey,/rewards/login,desktop,2,4,5,"Login doesn't work. No error message, no 'wrong password' message, just... nothing. The button grays out and that's it.",login,negative,True
+MED-5503,2026-05-14T08:18:00,2026-05-14,email_survey,/rewards/signup,desktop,2,2,6,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5504,2026-05-14T20:03:00,2026-05-14,web_intercept,/,mobile,4,10,3,Love the menu selection. The spicy mango is incredible.,browse,positive,True
+MED-5505,2026-05-14T17:24:00,2026-05-14,web_intercept,/recipes,desktop,3,9,3,Really enjoy the recipes section. Made the classic lime at home!,browse,neutral,True
+MED-5506,2026-05-14T16:11:00,2026-05-14,post_purchase,/order/checkout,mobile,3,0,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,neutral,True
+MED-5507,2026-05-14T21:50:00,2026-05-14,web_intercept,/order/build-your-own,mobile,4,2,6,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,positive,True
+MED-5508,2026-05-14T11:54:00,2026-05-14,web_intercept,/recipes,desktop,5,10,3,"Great margaritas, website could use some work though.",browse,positive,False
+MED-5509,2026-05-14T20:54:00,2026-05-14,email_survey,/rewards/signup,mobile,1,1,5,"Signup form is broken. Used my normal email, clicked submit, nothing happened. No error, no confirmation, nothing.",signup,negative,False
+MED-5510,2026-05-14T22:38:00,2026-05-14,web_intercept,/rewards/login,mobile,3,3,4,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,neutral,True
+MED-5511,2026-05-15T22:37:00,2026-05-15,web_intercept,/order/build-your-own,desktop,4,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,False
+MED-5512,2026-05-15T10:09:00,2026-05-15,email_survey,/,mobile,3,8,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,neutral,True
+MED-5513,2026-05-15T21:04:00,2026-05-15,web_intercept,/order/build-your-own,mobile,4,5,4,"Built my dream margarita, went to checkout, and the price was completely different from what was shown. Very frustrating.",build,positive,True
+MED-5514,2026-05-15T14:42:00,2026-05-15,post_purchase,/,mobile,5,8,2,The party packs are an amazing deal. Ordered for my office happy hour.,browse,positive,True
+MED-5515,2026-05-15T09:03:00,2026-05-15,app_feedback,/order/build-your-own,desktop,2,4,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5516,2026-05-15T09:03:00,2026-05-15,web_intercept,/order/build-your-own,mobile,3,5,4,Price calculator seems broken - shows $0 no matter what I add. Had to call to find out the real price.,build,neutral,True
+MED-5517,2026-05-15T18:15:00,2026-05-15,post_purchase,/rewards/signup,mobile,2,1,7,My email has a period in it (first.last@email.com) and your form says it's invalid. Come on.,signup,negative,False
+MED-5518,2026-05-15T21:06:00,2026-05-15,post_purchase,/order/build-your-own,mobile,4,2,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,True
+MED-5519,2026-05-15T13:31:00,2026-05-15,email_survey,/order/build-your-own,mobile,4,3,4,Love the build-your-own concept but the UI is broken on mobile. Buttons are hidden behind images.,build,positive,True
+MED-5520,2026-05-15T18:22:00,2026-05-15,web_intercept,/order/checkout,desktop,1,2,6,Checkout on mobile is unusable. Everything shifts around and the form fields jump.,checkout,negative,False
+MED-5521,2026-05-15T17:58:00,2026-05-15,email_survey,/order/checkout,mobile,1,4,7,My card got charged but the page showed an error and cleared everything. Now I don't know if my order went through.,checkout,negative,False
+MED-5522,2026-05-15T21:20:00,2026-05-15,post_purchase,/locations,mobile,4,9,1,Would love to see nutritional info on the menu pages.,browse,positive,True
+MED-5523,2026-05-15T19:59:00,2026-05-15,email_survey,/order/build-your-own,desktop,4,5,6,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,positive,False
+MED-5524,2026-05-15T22:35:00,2026-05-15,web_intercept,/order/checkout,desktop,2,3,7,"I filled out my entire address and when it said my zip code was wrong, it cleared EVERYTHING. I had to start over three times before I gave up.",checkout,negative,False
+MED-5525,2026-05-15T14:15:00,2026-05-15,app_feedback,/catering,mobile,5,7,2,Your website loads really fast on desktop. Nice job.,browse,positive,True
+MED-5526,2026-05-15T19:01:00,2026-05-15,email_survey,/blog,desktop,4,7,1,Really enjoy the recipes section. Made the classic lime at home!,browse,positive,True
+MED-5527,2026-05-15T22:00:00,2026-05-15,post_purchase,/recipes,mobile,4,9,1,Tried to find your Austin location hours and they were listed differently on the locations page vs Google Maps.,browse,positive,True
+MED-5528,2026-05-15T13:02:00,2026-05-15,app_feedback,/rewards/login,mobile,2,3,6,The login button seems to submit but then nothing changes. Am I logged in? Am I not? Who knows.,login,negative,True
+MED-5529,2026-05-15T20:14:00,2026-05-15,web_intercept,/order/checkout,desktop,2,2,6,The checkout page took forever to load and then my form data disappeared when I hit submit. Just let me buy my margarita kit!,checkout,negative,False
+MED-5530,2026-05-15T10:18:00,2026-05-15,web_intercept,/rewards/login,desktop,3,5,5,I can't log in. I've reset my password twice and it still just does nothing when I click login.,login,neutral,True
+MED-5531,2026-05-15T08:38:00,2026-05-15,post_purchase,/blog,mobile,5,8,3,"Great margaritas, website could use some work though.",browse,positive,False
+MED-5532,2026-05-15T11:35:00,2026-05-15,web_intercept,/order/build-your-own,desktop,2,3,5,The ingredient selector is really cool in concept but the price doesn't update when you add things. I had no idea what I was going to pay.,build,negative,False
+MED-5533,2026-05-15T16:16:00,2026-05-15,web_intercept,/order/build-your-own,desktop,4,5,5,On my phone the ingredient images overlap the selection buttons. Can't tell what I'm picking.,build,positive,True
